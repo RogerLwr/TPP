@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f4"
+    android:orientation="vertical"
+    android:paddingEnd="28dp"
+    android:paddingLeft="28dp"
+    android:paddingRight="28dp"
+    android:paddingStart="28dp"
+    android:paddingTop="24dp">
+
+    <EditText
+        android:id="@+id/phone_edit_text"
+        android:inputType="phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_bg_white_top"
+        android:hint="@string/hint_input_user_name"
+        android:paddingBottom="18dp"
+        android:paddingLeft="12dp"
+        android:maxLength="11"
+        android:textColorHint="@color/gray_99"
+        android:paddingStart="12dp"
+        android:paddingTop="18dp" />
+
+    <EditText
+        android:id="@+id/password_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:inputType="textPassword"
+        android:background="@drawable/item_bg_white_bottom"
+        android:textColorHint="@color/gray_99"
+        android:hint="@string/hint_input_password"
+        android:paddingBottom="18dp"
+        android:paddingLeft="12dp"
+        android:paddingStart="12dp"
+        android:paddingTop="18dp" />
+
+    <TextView
+        android:id="@+id/submit_button"
+        style="@style/Widget.Button.Green"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:enabled="false"
+        android:text="@string/login" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/register_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:clickable="true"
+            android:text="@string/register"
+            android:textColor="@color/gray_33"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/forget_password_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:clickable="true"
+            android:text="@string/forget_password"
+            android:textColor="@color/gray_33"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

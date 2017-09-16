@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="300dp"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/customerdialog_title"
+        android:layout_width="wrap_content"
+        android:padding="20dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/tx_4d"
+        android:text="提示"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_customerdialog_content"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal"
+        android:text="请确保是否已经收货?"
+        android:textColor="@color/tx_4d"
+        android:textSize="16sp" />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/bg_ccc" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radius"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_marginBottom="80dp">
+
+        <Button
+            android:id="@+id/customerdialog_cancle"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:text="还没收货"
+            android:textColor="@color/green_0c"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:background="#bbbbbb"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/customerdialog_ok"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:text="确认收货"
+            android:textColor="@color/green_0c"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

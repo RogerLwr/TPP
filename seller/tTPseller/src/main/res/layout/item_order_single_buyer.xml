@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contain_order_buyer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dip"
+        android:layout_marginBottom="6dip"
+        android:background="@color/gray_e6" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="6dip"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <TextView
+            android:id="@+id/order_id_text_view"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="订单编号: "
+            android:textColor="@color/gray_4d"
+            android:textSize="12sp"
+            />
+
+
+        <TextView
+            android:id="@+id/status_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="end"
+            android:text="@string/place_holder"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray_4d"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/deliver_type_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="配送方式: 送货上门"
+        android:layout_marginBottom="6dp"
+        android:textColor="@color/gray_4d"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="12sp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp" />
+    <TextView
+        android:id="@+id/pay_status_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="支付状态: 支付成功"
+        android:textColor="@color/gray_4d"
+        android:layout_marginBottom="6dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+
+        android:textSize="12sp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp" />
+
+    <TextView
+        android:id="@+id/deliver_time_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="配送时间: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/gray_66"
+        android:textSize="12sp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp" />
+
+    <TextView
+        android:id="@+id/address_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="配送地址: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/gray_66"
+        android:textSize="12sp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dip"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="6dip"
+        android:background="@color/gray_e6"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="6dip"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:gravity="start"
+            android:text="商品金额"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray_4d"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/amount_text_view"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="end"
+            android:text="@string/place_holder"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray_4d"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="6dip"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:gravity="start"
+            android:text="运费金额"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray_4d"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/deliver_fee_text_view"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="end"
+            android:text="@string/place_holder"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray_4d"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="6dip"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:gravity="start"
+            android:text="优惠金额"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray_4d"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/coupon_amount_text_view"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="end"
+            android:text="@string/place_holder"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray_4d"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="6dip"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:gravity="start"
+            android:text="订单金额"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray_4d"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/total_amount_text_view"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="end"
+            android:text="@string/place_holder"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray_4d"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dip"
+        android:layout_marginBottom="10dip"
+        android:background="@color/gray_e6" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <TextView
+            android:id="@+id/allowance_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:gravity="start"
+            android:text="含有平台补贴¥50"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/green_0c"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/allowance_status_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="end"
+            android:text="未领取"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/green_0c"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dip"
+        android:background="@color/gray_e6" />
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f4"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="74dp"
+        android:src="@drawable/ic_not_validated" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="9dp"
+        android:text="@string/click_to_refresh"
+        android:textColor="@color/gray_99"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="54dp"
+        android:autoLink="phone"
+        android:gravity="center_horizontal"
+        android:text="您的账号正在审核，\n如需下单，请及时联系业务员或者客服进行开通"
+        android:textColor="@color/gray_66"
+        android:textColorLink="@color/green"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/service_line_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        android:autoLink="phone"
+        android:gravity="center_horizontal"
+        android:text="@string/service_line"
+        android:textColor="@color/gray_66"
+        android:textColorLink="@color/green"
+        android:textSize="14sp" />
+
+</LinearLayout>

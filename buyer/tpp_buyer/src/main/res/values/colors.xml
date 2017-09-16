@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- UI框效果 -->
+
+	<color name="shopping_cart_store_invalid">#ffdcc3</color>
+
+    <color name="back_color">#38b700</color>
+	<color name="back_green">#38b700</color>
+    <color name="bbb_color">#bbb</color>
+	<color name="bg_20">#20B2AA</color>
+    <color name="bg_9d">#9dcf62</color>
+	<color name="bg_ccc">#ccc</color>
+	<color name="gray_cc">#ccc</color>
+	<color name="gray_b2">#b2b2b2</color>
+	<color name="btn_bg_order">#FD721F</color>
+	<color name="btn_bg_order_blue">#10B3FF</color>
+	<color name="black">#000</color>
+	<color name="black_alpha_8">#8000</color>
+	<color name="gray">#DDD</color>
+	<color name="green_9b">#9BCE2D</color>
+	<color name="green_alpha_4">#40f0</color>
+	
+	<color name="main_bg_e6">#e6e6e6</color>
+	<color name="main_bg_f5">#f5f5f5</color>
+	<color name="main_top_bg_f2">#f2f2f2</color>
+	<color name="line_65">#656565</color>
+	<color name="line_bb">#bbb</color>
+    <color name="loadingdialogtran">#0000</color>
+    <color name="orange">#FD721F</color>
+    <color name="orange_f6">#F6550c</color>
+    <color name="orange_red">#Fc3737</color>
+    
+	<color name="point_c5">#c5c5c5</color>
+	<color name="ptrtext">#4D4D4D</color>
+	<color name="ptrtext3">#333</color>
+	<color name="ptrtext6">#666</color>
+	<color name="ptr_text_color80">#808080</color>
+	<color name="ptr_text_color62">#bb626262</color>
+    <color name="pressed_999">#999</color>
+    <color name="pressed_ccc">#ccc</color>
+
+    <color name="red_dd">#dd0055</color>
+    <color name="red_e0">#e05000</color>
+    <color name="red_ffa">#ffa722</color>
+    <color name="red">#f00</color>
+
+	<color name="green_selected">#79b101</color>
+    
+    <color name="title_green">#38b700</color>
+    <color name="title_red">#fc3737</color>
+    <color name="trans">#0000</color>
+    <color name="text_red_rem">#f21b1b</color>
+	<color name="tx_24_gray">#24B3AB</color>
+	<color name="tx_333">#333</color>
+	<color name="tx_4c">#4c4c4c</color>
+	<color name="tx_4d">#4d4d4d</color>
+	<color name="tx_52">#525252</color>
+	<color name="tx_60">#606060</color>
+	<color name="tx_666">#666</color>
+	<color name="tx_80">#808080</color>
+	<color name="tx_8c">#8c8c8c</color>
+	<color name="tx_999">#999</color>
+	<color name="tx_b3">#b3b3b3</color>
+	<color name="tx_ccc">#ccc</color>
+    <color name="tx_fc0">#fc0</color>
+    <color name="tx_f2">#f2f7fa</color>
+    <color name="tx_fd">#FD721F</color>
+    <color name="tx_ff">#FFB82E</color>
+
+    <color name="tx_ff3333">#ff3333</color>
+    <color name="tx_selected">#78B739</color>
+    
+    <color name="ui_light_orange">#FF6633</color>
+    <color name="ui_light_gray">#CCCCCC</color>
+    <color name="white">#ffffff</color>
+    <color name="white_f2">#f2f7fa</color>
+	<color name="yellow">#ffedd2</color>
+
+
+	<color name="red_ff5e5e">#ff5e5e</color>
+	<color name="red_ff6">#ff6000</color>
+	<color name="green_0cc486">#0cc486</color>
+</resources>

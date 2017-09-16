@@ -1,0 +1,7 @@
+include ':foundation'
+include ':tTPseller'
+//include ':cropper'
+include ':pay'
+
+//include ':location'
+//include ':umengUpdate'

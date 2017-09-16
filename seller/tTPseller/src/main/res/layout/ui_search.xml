@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f4"
+    android:orientation="vertical">
+
+    <View
+        style="@style/Widget.Line"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"/>
+
+    <FrameLayout
+        android:id="@+id/search_list_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/product_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/gray_f4"
+            android:dividerHeight="8dip"/>
+
+        <ListView
+            android:id="@+id/auto_search_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="0.6dip"
+            android:visibility="invisible"
+            android:divider="@color/gray_e9"/>
+
+        <RelativeLayout
+            android:id="@+id/layout_search_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            >
+
+            <TextView
+                android:id="@+id/history_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_f4"
+                android:text="历史记录"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:textColor="@color/gray_66"
+                />
+
+            <ListView
+                android:id="@+id/search_history_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/history_tv"
+                android:dividerHeight="0.6dip"
+                android:divider="@color/gray_e9"/>
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_e9"
+                android:layout_below="@+id/search_history_list_view"
+                />
+
+
+            <TextView
+                android:id="@+id/clear_search_history_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_below="@+id/line"
+                android:gravity="center_horizontal"
+                android:text="清除历史记录"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/gray_33"
+                />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/clear_search_history_tv"
+                android:minHeight="300dp"
+                android:layout_alignParentBottom="true"
+                />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

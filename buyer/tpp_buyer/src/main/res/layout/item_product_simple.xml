@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:background="@color/white"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/name_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="商品名"
+        android:textColor="@color/gray_33"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/number_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:text="x100"
+        android:textColor="@color/gray_33"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/price_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="2"
+        android:gravity="right"
+        android:text="单价"
+        android:textColor="@color/gray_33"
+        android:textSize="12sp" />
+</LinearLayout>

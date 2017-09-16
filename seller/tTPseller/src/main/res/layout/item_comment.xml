@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="8dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/comment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="6dp">
+
+        <ImageView
+            android:id="@+id/avatar_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@drawable/ic_151020_comment_photo" />
+
+        <TextView
+            android:id="@+id/buyer_name_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="杨国富麻辣烫"
+            android:textColor="@color/gray_33"
+            android:textSize="16sp"
+            android:layout_marginStart="5dp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/time_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="2015.03.02"
+            android:textColor="@color/gray_99"
+            android:textSize="14sp"
+            android:layout_marginEnd="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/comment_container"
+        android:layout_below="@+id/comment_container"
+        android:orientation="vertical"
+        android:layout_alignStart="@id/comment_container">
+
+        <RatingBar
+            android:id="@+id/rating_bar"
+            style="@style/MyRatingBarHeart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="4.0"
+            android:stepSize="1.0"
+            android:layout_marginStart="10dp" />
+
+        <TextView
+            android:id="@+id/content_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="10dp"
+            android:text="质量不错,物流也很快,服务态度也非常好,质量不错,物流也很快,服务态度也非常好"
+            android:textColor="@color/gray_4d"
+            android:textSize="15sp"
+            android:layout_marginStart="10dp" />
+    </LinearLayout>
+
+</RelativeLayout>

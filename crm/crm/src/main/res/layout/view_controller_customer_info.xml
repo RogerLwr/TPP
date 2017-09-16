@@ -1,0 +1,822 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:background="@color/white"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="客户资料"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@id/ab_back_button"
+            android:layout_width="56dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:clickable="true"
+            android:contentDescription="@string/empty"
+            android:padding="16dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_15_09_14_back" />
+
+        <ImageView
+            android:id="@+id/sale_code_button"
+            android:layout_width="@dimen/abc_action_bar_default_height_material"
+            android:layout_height="@dimen/abc_action_bar_default_height_material"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="-6dip"
+            android:visibility="gone"
+            android:background="@drawable/abc_list_selector_holo_dark"
+            android:clickable="true"
+            android:contentDescription="@string/empty"
+            android:padding="16dip"
+            android:paddingLeft="6dip"
+            android:src="@drawable/ic_150925_sale_code" />
+
+        <ImageView
+            android:id="@+id/edit_button"
+            android:layout_width="@dimen/abc_action_bar_default_height_material"
+            android:layout_height="@dimen/abc_action_bar_default_height_material"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dip"
+            android:background="@drawable/abc_list_selector_holo_dark"
+            android:clickable="true"
+            android:contentDescription="@string/empty"
+            android:padding="16dip"
+            android:paddingRight="-16dip"
+            android:visibility="gone"
+            android:src="@drawable/tab_ic_edit" />
+    </RelativeLayout>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp">
+
+            <requestFocus/>
+        </View>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/gray_ac"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            style="@style/Widget.LinearLayout"
+            android:background="@drawable/bg_shape_150922_approve_corners5_gray_ed"
+            >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/ic_150922_phone"
+                />
+
+            <TextView
+                android:id="@+id/contract_number_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:inputType="phone"
+                android:padding="5dp"
+                android:hint="客户联系方式"
+                android:background="@null"
+                android:textSize="15sp"
+                android:textColorHint="@color/gray_80"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/user_type_tv_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            style="@style/Widget.LinearLayout"
+            android:visibility="visible"
+            android:background="@drawable/bg_shape_150922_approve_corners5_gray_ed"
+            >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/ic_150922_my_info_role"
+                />
+
+            <TextView
+                android:id="@+id/user_type_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="5dp"
+                android:hint="客户类型"
+                android:background="@null"
+                android:textSize="15sp"
+                android:textColorHint="@color/gray_80"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/user_name_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            style="@style/Widget.LinearLayout"
+            android:background="@drawable/bg_shape_150922_approve_corners5_gray_ed"
+            >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/ic_150922_my_info_name"
+                />
+
+            <EditText
+                android:id="@+id/customer_name_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:enabled="false"
+                android:padding="5dp"
+                android:hint="客户姓名"
+                android:background="@null"
+                android:textSize="15sp"
+                android:textColorHint="@color/gray_80"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/store_name_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.LinearLayout"
+            android:visibility="visible"
+            android:background="@drawable/bg_shape_150922_approve_corners5_gray_ed"
+            android:gravity="left|center"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <ImageView
+                android:layout_width="24dip"
+                android:layout_height="24dip"
+                android:layout_margin="5dip"
+                android:src="@drawable/ic_150922_my_info_department" />
+
+            <EditText
+                android:id="@+id/store_name_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="true"
+                android:background="@null"
+                android:padding="5dp"
+                android:ems="15"
+                android:hint="商店名称"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="15sp" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/arae_city_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            style="@style/Widget.LinearLayout"
+            android:background="@drawable/bg_shape_150922_approve_corners5_gray_ed"
+            >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/ic_151022_arae"
+                />
+
+            <TextView
+                android:id="@+id/addressdes_city"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:padding="5dp"
+                android:background="@null"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:hint="选择区域"
+                android:textColor="@color/gray_33"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/store_address_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.LinearLayout"
+            android:visibility="visible"
+            android:background="@drawable/bg_shape_150922_approve_corners5_gray_ed"
+            android:gravity="left|center"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <ImageView
+                android:layout_width="24dip"
+                android:layout_height="24dip"
+                android:layout_margin="5dip"
+                android:src="@drawable/ic_150922_addr" />
+
+            <EditText
+                android:id="@+id/store_address_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="true"
+                android:padding="5dp"
+                android:background="@null"
+                android:ems="15"
+                android:hint="商店地址"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="15sp" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/at_area_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.LinearLayout"
+            android:visibility="gone"
+            android:background="@drawable/bg_shape_150922_approve_corners5_gray_ed"
+            android:gravity="left|center"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+            <ImageView
+                android:layout_width="24dip"
+                android:layout_height="24dip"
+                android:layout_margin="5dip"
+                android:src="@drawable/ic_150922_area" />
+            <TextView
+                android:id="@+id/at_area_market_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="5dp"
+                android:textSize="15sp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/to_send_amount_ll_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.LinearLayout"
+            android:visibility="visible"
+            android:background="@drawable/bg_shape_150922_approve_corners5_gray_ed"
+            android:gravity="left|center"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <ImageView
+                android:layout_width="24dip"
+                android:layout_height="24dip"
+                android:layout_margin="5dip"
+                android:src="@drawable/ic_150922_area" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="起送金额:"/>
+
+
+            <EditText
+                android:id="@+id/to_send_amount_edt"
+                android:layout_width="80dp"
+                android:background="@null"
+                android:textSize="15sp"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:singleLine="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="元"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/to_send_all_district_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.LinearLayout"
+            android:visibility="visible"
+            android:background="@drawable/bg_shape_150922_approve_corners5_gray_ed"
+            android:gravity="left|center"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <ImageView
+                android:layout_width="24dip"
+                android:layout_height="24dip"
+                android:layout_margin="5dip"
+                android:src="@drawable/ic_150922_area" />
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="可配送商圈:"/>
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/to_send_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ListView
+                android:id="@+id/district_list_view111"
+                android:scrollbars="none"
+                android:layout_width="150dp"
+                android:visibility="invisible"
+                android:layout_height="wrap_content">
+            </ListView>
+
+            <ImageView
+                android:id="@+id/to_send_all_district"
+                android:layout_marginLeft="10dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/ic_151020_add_prod_img"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/add_string_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="100dp"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/area_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.LinearLayout"
+            android:visibility="gone"
+            android:background="@drawable/bg_shape_150922_approve_corners5_gray_ed"
+            android:gravity="left|center"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <ImageView
+                android:layout_width="24dip"
+                android:layout_height="24dip"
+                android:layout_margin="5dip"
+                android:src="@drawable/ic_150922_area" />
+
+            <Spinner
+                android:id="@+id/area_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_ed"
+                android:popupBackground="@color/gray_ec" />
+
+            <!--<TextView
+                android:id="@+id/select_market_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:background="@null"
+                android:clickable="true"
+                android:ems="15"
+                android:focusable="false"
+                android:hint="选择商圈"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="15sp" >
+            </TextView>-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/turnover_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.LinearLayout"
+            android:visibility="visible"
+            android:background="@drawable/bg_shape_150922_approve_corners5_gray_ed"
+            android:gravity="left|center"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <ImageView
+                android:layout_width="24dip"
+                android:layout_height="24dip"
+                android:layout_margin="5dip"
+                android:src="@drawable/ic_151022_turnover" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="日营业额: "/>
+
+            <Spinner
+                android:id="@+id/turnover_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_ed"
+                android:popupBackground="@color/gray_ec" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/purchase_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.LinearLayout"
+            android:visibility="visible"
+            android:background="@drawable/bg_shape_150922_approve_corners5_gray_ed"
+            android:gravity="left|center"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <ImageView
+                android:layout_width="24dip"
+                android:layout_height="24dip"
+                android:layout_margin="5dip"
+                android:src="@drawable/ic_151022_purchase" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="日采购额: "/>
+
+            <Spinner
+                android:id="@+id/purchase_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_ed"
+                android:popupBackground="@color/gray_ec" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buyer_type_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.LinearLayout"
+            android:visibility="visible"
+            android:background="@drawable/bg_shape_150922_approve_corners5_gray_ed"
+            android:gravity="left|center"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <ImageView
+                android:layout_width="24dip"
+                android:layout_height="24dip"
+                android:layout_margin="5dip"
+                android:src="@drawable/ic_151022_buyer_type" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="业态: "/>
+
+            <Spinner
+                android:id="@+id/buyer_type_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_ed"
+                android:popupBackground="@color/gray_ec" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/seat_num_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            style="@style/Widget.LinearLayout"
+            android:background="@drawable/bg_shape_150922_approve_corners5_gray_ed"
+            >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/ic_151022_seat_num"
+                />
+
+            <EditText
+                android:id="@+id/num_edit_text"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="5dp"
+                android:hint=""
+                android:inputType="number"
+                android:background="@null"
+                android:textSize="15sp"
+                android:textColorHint="@color/gray_80"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:text="个座位"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/store_photo_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.LinearLayout"
+            android:visibility="visible"
+            android:background="@drawable/bg_shape_150922_approve_corners5_gray_ed"
+            android:gravity="left|center"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <ImageView
+                android:layout_width="24dip"
+                android:layout_height="24dip"
+                android:layout_margin="5dip"
+                android:src="@drawable/ic_151023_photo" />
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="70dp">
+
+                <ImageView
+                    android:id="@+id/customer_image_button"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="25dp"
+                    android:clickable="true"
+                    android:src="@drawable/ic_151020_add_prod_img" />
+
+                <ImageView
+                    android:id="@+id/clear_image_button"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:alpha="1"
+                    android:clickable="true"
+                    android:src="@drawable/ic_close_button"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+            <!--<ImageView
+                android:id="@+id/store_photo_image_view"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="25dp"
+                android:clickable="true"
+                android:src="@drawable/ic_151020_add_prod_img" >
+            </ImageView>-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/user_type_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.LinearLayout"
+            android:gravity="left|center"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <RadioGroup
+                android:id="@+id/user_type_rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/buyer_rb"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:button="@drawable/btn_150923_radio_selector"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="买家"
+                    android:textColor="@color/gray_33"
+                    android:textSize="16sp"
+                    />
+
+                <RadioButton
+                    android:id="@+id/sale_rb"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/btn_150923_radio_selector"
+                    android:layout_gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="卖家"
+                    android:textColor="@color/gray_33"
+                    android:textSize="16sp"
+                    />
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/store_category_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.LinearLayout"
+            android:visibility="gone"
+            android:gravity="left|center"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <RadioGroup
+                android:id="@+id/store_category_rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/restaurant_rb"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:button="@drawable/btn_150923_radio_selector"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="餐厅"
+                    android:textColor="@color/gray_33"
+                    android:textSize="16sp"
+                    />
+
+                <RadioButton
+                    android:id="@+id/not_restaurant_rb"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/btn_150923_radio_selector"
+                    android:layout_gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="非餐厅"
+                    android:textColor="@color/gray_33"
+                    android:textSize="16sp"
+                    />
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:padding="12dip" >
+
+
+            <!--<TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dip"
+                    android:text="@string/store_address"
+                    android:textColor="@color/gray_71"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/store_address_edit_text"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="text" />
+            </TableRow>-->
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_margin="4dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dip"
+                    android:text="客户类型: "
+                    android:textColor="@color/gray_71"
+                    android:textSize="16sp" />
+
+                <Spinner
+                    android:id="@+id/user_type_spinner"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/orange_button_normal"
+                    android:clickable="false"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:popupBackground="@color/white" />
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/green_button_selector"
+            android:text="提交"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</ScrollView>
+</LinearLayout>

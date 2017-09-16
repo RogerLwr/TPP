@@ -1,0 +1,7 @@
+//include ':umengUpdate'
+//include ':pay'
+//include ':zXingProj'
+//include ':location'
+
+include ':foundation'
+include ':tpp_buyer'

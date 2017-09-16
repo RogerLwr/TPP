@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="service_line">4006&#8211;406&#8211;010</string>
+
+    <!-- login -->
+    <string name="hint_input_user_name">用户名</string>
+    <string name="hint_input_password">密码</string>
+    <string name="hint_input_validation_code">请输入验证码</string>
+    <string name="login">登录</string>
+
+    <!-- register -->
+    <string name="current_city">您所在的城市:%1$s</string>
+    <string name="locate">定位到当前位置</string>
+    <string name="switch_city">切换</string>
+    <string name="get_validation_code">获取验证码</string>
+    <string name="next_step">下一步</string>
+    <string name="receive_address">收货地址:%1$s</string>
+    <string name="address_recommendation">为您推荐以下商圈</string>
+    <string name="hint_input_customer_name">请输入你的姓名</string>
+    <string name="hint_input_store_name">请输入您的餐厅名称</string>
+    <string name="hint_input_password_">请输入您的密码</string>
+    <string name="hint_repeat_password">请重新输入您的密码</string>
+
+    <string name="place_holder">占位符</string>
+    <string name="sapce">&#160;</string>
+    <string name="app_name">天平派</string>
+    <!-- 系统全局页面 -->
+    <string name="dialog_ok">确定</string>
+    <string name="dialog_not">取消</string>
+    <string name="dialog_loading">正在加载,请稍后!</string>
+    <string name="dialog_handle">正在处理,请稍等&#8230;</string>
+    <string name="dialog_saving">正在保存,请稍等&#8230;</string>
+    <!-- 欢迎页面 -->
+    <string name="welcome_record">版权所有:北京兄弟之恒科技有限公司</string>
+    <string name="guide_start">进入天平派</string>
+    <string name="welcome_to_tianpingpai">欢迎使用天平派</string>
+    <string name="you_may_shop_after_complete_info">在您完善收货信息后\n就可以开始购物体验了</string>
+    <string name="complete_info_and_use">完善收货信息，开始下单</string>
+    <string name="call_service">拨打客服电话进行审核</string>
+    <string name="take_a_look_around">什么也不做，先逛逛</string>
+
+    <!-- 商圈  -->
+    <string name="my_receive_address">我的收货地址:%1$s</string>
+    <string name="click_to_load_more">点击加载更多</string>
+    <string name="current_selected_city">当前所选城市:%1$s</string>
+
+
+    <!-- 主页面 -->
+    <string name="main_orderform">订单管理</string>
+    <string name="main_managegoods">商品管理</string>
+
+    <!-- 购物车 -->
+
+    <string name="empty_shopping_cart">购物车是空的，赶紧去采购吧～</string>
+    <string name="empty_message">暂时还没有消息哦~</string>
+    <string name="empty_address">暂时没有收货地址哦~</string>
+    <string name="empty_favorite_store">暂时没有收藏店铺哦~</string>
+    <string name="empty_order">您还没有相关的订单~</string>
+    <string name="empty_common_use">常用采购目前没有任何商品,\n可以在购买时选择添加到常用采购。</string>
+    <string name="empty_search">没有您搜索的商品，看看其他商品吧～</string>
+    <string name="empty_journal">您还没有任何消费记录～</string>
+    <string name="empty_store">该店铺正在装修，敬请期待～</string>
+    <string name="empty_store_collection">你还没有任何收藏的店铺哦～</string>
+
+    <!-- 个人中心 -->
+    <string name="ownmain_nomoney">待付款</string>
+    <string name="ownmain_nodelivery">待收货</string>
+    <string name="ownmain_allorder">全部订单</string>
+    <string name="ownmain_address">我的收货地址</string>
+    <string name="ownmain_wallte">我的钱包</string>
+    <string name="ownmain_messages">消息中心</string>
+    <string name="ownmain_tel">400&#8211;6406&#8211;010</string>
+    <string name="ownmain_customer">客服每天8:30&#8211;21:30在线</string>
+
+    <!-- 登录 -->
+    <string name="login_title">登  录</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="login_phonenum">手机号码:</string>
+    <string name="login_pwd">密码:</string>
+    <string name="login_showpwd">显示密码</string>
+    <string name="login_gonepwd">不显示密码</string>
+    <string name="login_phonenumtxt">请输入手机号码</string>
+    <string name="login_pwdtxt">输入6位密码</string>
+    <string name="forget_validate">验证码</string>
+
+    <!-- 订单单管理 -->
+    <string name="orderform_new">新订单</string>
+    <string name="orderform_finish">未发货</string>
+    <string name="orderform_all">已完成</string>
+    <string name="orderform_numtx">订单号:</string>
+    <string name="orderform_pricetx">金额:</string>
+    <string name="orderform_ordertimetx">配送时间:</string>
+    <string name="orderform_orderaddresstx">配送地址:</string>
+    <string name="orderform_orderstatetx">订单状态:</string>
+    <string name="orderform_lookorderdes">查看订单详情</string>
+
+    <!-- 商品管理 -->
+    <string name="managegoods_shelves">上架</string>
+    <string name="managegoods_offshelves">下架</string>
+
+    <!-- 设置 -->
+    <string name="setttingmain_title">设置</string>
+    <string name="setttingmain_push">接收通知</string>
+    <string name="setttingmain_help">帮助中心</string>
+    <string name="feedback">意见反馈</string>
+    <string name="about_us">关于我们</string>
+    <string name="check_update">检查更新</string>
+    <string name="logout">退出登录</string>
+
+    <!-- 订单 -->
+    <string name="order_pay_success_reminder">温馨提示：由于商品热销，为确保您的订单得到及时处理，请在30分钟内付款完成，延迟付款系统将在4小时内自动取消订单</string>
+
+    <!-- From: file:/Users/lucas/dev/workspace/umeng/feedback/umeng-feedback-android/sdk/src/main/res/values/umeng_fb_color.xml -->
+    <eat-comment />
+
+    <color name="umeng_fb_color_btn_normal">#333333</color>
+    <color name="umeng_fb_color_btn_pressed">#1495F7</color>
+    <!-- From: file:/Users/lucas/dev/workspace/umeng/feedback/umeng-feedback-android/sdk/src/main/res/values/umeng_fb_strings.xml -->
+    <eat-comment />
+
+    <string name="umeng_fb_back">Back</string>
+    <string name="umeng_fb_contact_info">联系方式</string>
+    <string name="umeng_fb_contact_info_hint">请留下您的邮箱,电话,QQ</string>
+    <string name="umeng_fb_contact_title">联系人</string>
+    <string name="umeng_fb_contact_update_at">Updated at </string>
+    <string name="umeng_fb_notification_content_formatter_multiple_msg">You received %d new replies from the app developer.</string>
+    <string name="umeng_fb_notification_content_formatter_single_msg">New reply: %s</string>
+    <string name="umeng_fb_notification_ticker_text">Got new reply</string>
+    <string name="umeng_fb_powered_by">Powered by</string>
+    <string name="umeng_fb_reply_content_default">Your precious feedback are appriciated.</string>
+    <string name="umeng_fb_reply_content_hint">我想说</string>
+    <string name="umeng_fb_reply_date_default">20133-12 13:24:00</string>
+    <string name="umeng_fb_send">发送</string>
+    <string name="umeng_fb_title">意见反馈</string>
+    <string name="pull_to_refresh_pull_label">下拉可以刷新&#8230;</string>
+    <string name="pull_to_refresh_release_label">松开立即刷新</string>
+    <string name="pull_to_refresh_refreshing_label">正在刷新&#8230;</string>
+
+    <!-- Just use standard Pull Down String when pulling up. These can be set for languages which require it -->
+    <string name="pull_to_refresh_from_bottom_pull_label">上拉可以加载更多数据&#8230;</string>
+    <string name="pull_to_refresh_from_bottom_release_label">松开立即加载更多数据</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">正在加载更多数据&#8230;</string>
+    <string name="not_updated_yet">暂未更新过</string>
+    <string name="updated_at">上次更新于%1$s前</string>
+    <string name="updated_just_now">刚刚更新</string>
+    <string name="time_error">时间有问题</string>
+    <string name="activity_rule">活动规则</string>
+    <string name="product_desc">商品介绍</string>
+    <string name="contact_seller">联系卖家</string>
+    <string name="home">首页</string>
+    <string name="stores">店铺</string>
+    <string name="shopping_cart">购物车</string>
+    <string name="fav">收藏</string>
+    <string name="mine">我的</string>
+    <string name="take_a_look">进店逛逛</string>
+    <string name="address">地址:</string>
+    <string name="mobile">手机:</string>
+    <string name="purchase_num">数量:</string>
+    <string name="submit">提交</string>
+    <string name="name">姓名:</string>
+    <string name="search">搜索</string>
+    <string name="keep_buying">继续购买</string>
+    <string name="edit">编辑</string>
+    <string name="commit_order">提交订单</string>
+    <string name="register">注册</string>
+    <string name="select_all">全选</string>
+    <string name="delete">删除</string>
+    <string name="remark">备注</string>
+    <string name="remark_shop">给卖家留言:</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- 收藏  -->
+    <string name="collection_product">亲,你还没有收藏商品哦,为了方便你下单,请经快收藏商品~</string>
+    <string name="collection_store">亲,你还没有收藏店铺哦,为了方便你下单,请经快收藏店铺~</string>
+
+</resources>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="@color/gray_dc"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_f4"
+        android:orientation="horizontal"
+        android:padding="5dip">
+
+        <CheckBox
+            android:id="@+id/store_check_box"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/selector_check_box"
+            android:button="@null"
+            android:padding="10dp" />
+
+        <LinearLayout
+            android:id="@+id/to_store_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="4dp"
+                android:src="@drawable/ic_shopping_cart"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/store_name_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/gray_33"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:src="@drawable/chevron_black_right" />
+
+            <TextView
+                android:id="@+id/freight_status_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/orange"
+                android:paddingBottom="3dp"
+                android:paddingEnd="4dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingStart="4dp"
+                android:paddingTop="3dp"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dip"
+        android:background="@color/gray_dc" />
+
+    <LinearLayout
+        android:id="@+id/products_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dip"
+        android:layout_marginBottom="1dp"
+        android:background="@color/gray_dc" />
+
+    <LinearLayout
+        android:id="@+id/remark_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingEnd="10dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="10dp"
+        android:paddingStart="12dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2dp"
+            android:layout_marginStart="2dp"
+            android:text="备注:"
+            android:textColor="@color/gray_33"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/remark_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_weight="1"
+            android:textColor="@color/gray_33"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/remark_hint_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="15dp"
+            android:drawableRight="@drawable/chevron_right_gray"
+            android:text="请输入您的留言"
+            android:textColor="@color/gray_99"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dip"
+        android:layout_marginBottom="1dp"
+        android:background="@color/gray_dc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/store_full_status"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_marginTop="3dp"
+            android:padding="10dip"
+            android:textColor="@color/red_ff6"
+            android:textSize="14sp"
+            android:text="未达到起送金额"
+            android:drawableLeft="@drawable/ic_red_dot"
+            android:drawablePadding="6dp"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/price_container"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp">
+
+            <RelativeLayout
+                android:id="@+id/arrow_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/total_sum_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:text="123"
+                    android:textColor="@color/gray_66"
+                    android:textSize="14sp" />
+                <ImageView
+                    android:id="@+id/arrow_status"
+                    android:layout_toRightOf="@+id/total_sum_text_view"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow_down"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/price_sum_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="123"
+                android:padding="5dip"
+                android:visibility="gone"
+                android:textColor="@color/gray_66"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/freight_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dip"
+                android:text="123"
+                android:visibility="gone"
+                android:textColor="@color/gray_66"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0dip"
+        android:background="@color/gray_dc" />
+
+</LinearLayout>

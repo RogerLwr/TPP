@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/product_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="8dip"
+    android:paddingBottom="5dp"
+    android:background="@color/white"
+    android:touchscreenBlocksFocus="false"
+    >
+
+
+    <ImageView
+        android:id="@+id/thumbnail_image_view"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_marginLeft="14dp"
+        android:background="@drawable/shape_stroke_line"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:src="@drawable/temp1"
+         />
+
+    <ImageView
+        android:id="@+id/down_image_view"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:visibility="gone"
+        android:src="@drawable/prod_down2" />
+
+    <LinearLayout
+        android:id="@+id/right_container"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:paddingLeft="14dip"
+        android:layout_marginEnd="14dp"
+        android:layout_toEndOf="@id/thumbnail_image_view"
+        android:layout_toRightOf="@id/thumbnail_image_view"
+        android:layout_marginRight="14dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/name_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:paddingEnd="0dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:paddingStart="0dp"
+                android:text="商品名称"
+                android:textColor="@color/gray_33"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/prod_status_text_view"
+                android:visibility="gone"
+                android:text="出售中"
+                android:textSize="12sp"
+                android:textColor="@color/green_0c"
+                />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/attr_info_text_view"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/gray_33"
+            android:textSize="12sp"
+            android:paddingBottom="2dp"
+            android:lines="2"
+            android:ellipsize="end"
+            android:text="【优质】新鲜"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+        <EditText
+            android:id="@+id/specs_unit_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="0dp"
+            android:background="@android:color/transparent"
+            android:focusable="false"
+            android:text="10/斤"
+            android:focusableInTouchMode="false"
+            android:inputType="none"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/stand_weight_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="箱(20*斤/400g)"
+                android:visibility="gone"
+                android:paddingBottom="2dp"
+                android:textColor="@color/gray_33"
+                android:textSize="11sp"
+                />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/desc_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/right_container"
+        android:layout_marginTop="2dp"
+        android:paddingLeft="14dip"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="start|top"
+        android:textColor="@color/gray_99"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:id="@+id/promotion_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="14dip"
+        android:layout_below="@id/desc_text_view"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:background="@color/gray_ee"
+        >
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/promotion_time_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start|top"
+                android:textColor="@color/gray_33"
+                android:paddingBottom="5dp"
+                android:text="2016.01.06-2016.04.08"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/promotion_status_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="start|top"
+                android:textColor="@color/red_ff6"
+                android:paddingBottom="5dp"
+                android:text="【促销中】"
+                android:textSize="12sp"
+                android:layout_marginStart="5dp" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/promotion_price_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="start|top"
+            android:textColor="@color/red_ff6"
+            android:textSize="12sp"
+            />
+        <TextView
+            android:id="@+id/promotion_info_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="start|top"
+            android:textColor="@color/gray_33"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:focusableInTouchMode="false"
+            android:gravity="start|top"
+            android:text="剩余"
+            android:textColor="@color/gray_33"
+            android:textSize="12sp"
+            />
+        <TextView
+            android:id="@+id/stock_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="start|top"
+            android:textColor="@color/gray_33"
+            android:textSize="12sp"
+            />
+        <TextView
+            android:id="@+id/promotion_unit_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="start|top"
+            android:text="箱"
+            android:textColor="@color/gray_33"
+            android:textSize="12sp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="8dp"
+        android:id="@+id/edit_stock_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="编辑库存"
+        android:layout_below="@+id/desc_text_view"
+        android:visibility="visible"
+        android:textSize="12sp"
+        android:textColor="@color/green_0c"
+        android:background="@drawable/btn_white_stroke_green_normal"
+        />
+
+    <EditText
+        android:id="@+id/new_price_text_view"
+        android:layout_width="72dp"
+        android:layout_height="32dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:visibility="gone"
+        android:background="@drawable/bg_btn_gray_stroke"
+        android:inputType="numberDecimal"
+        android:textSize="12sp"
+        android:paddingStart="1dp" />
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/action_bar_height"
+    android:background="@color/green"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:src="@drawable/ic_market_location"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="12dip"
+        />
+
+    <TextView
+        android:id="@+id/market_button"
+        style="@style/Widget.TextView.ActionBar.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center"
+        android:paddingLeft="16dip"
+        android:text="选择商圈"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="2dp" />
+
+    <TextView
+        android:id="@+id/search_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="1dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_et_box_corner15_color_00a"
+        android:drawableLeft="@drawable/ic_search_48"
+        android:drawablePadding="6dp"
+        android:clickable="true"
+        android:hint="查找商品"
+        android:inputType="none"
+        android:imeOptions="actionDone"
+        android:padding="6dp"
+        android:paddingLeft="10dp"
+        android:textColor="#d9efe8"
+        android:textColorHint="#d9efe8"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/add_button"
+        android:layout_width="@dimen/action_bar_height"
+        android:layout_height="@dimen/action_bar_height"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/abc_list_selector_holo_dark"
+        android:clickable="true"
+        android:scaleType="center"
+        android:src="@drawable/ic_scan" />
+
+</LinearLayout>

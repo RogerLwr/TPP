@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/group_shopping_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:touchscreenBlocksFocus="false"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/sale_name_text_view"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginLeft="14dp"
+            android:textColor="@color/gray_33"
+            android:text="牛肉供货商"
+            />
+
+        <TextView
+            android:id="@+id/status_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:text="组团中"
+            android:layout_marginRight="14dp"
+            android:textSize="14sp"
+            android:textColor="@color/green_0c"
+            />
+
+    </LinearLayout>
+
+    <View
+        style="@style/Widget.Line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+
+        android:touchscreenBlocksFocus="false"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/thumbnail_image_view"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_marginLeft="14dp"
+            android:background="@drawable/shape_stroke_line"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:src="@drawable/temp1"
+            />
+
+        <ImageView
+            android:id="@+id/down_image_view"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:visibility="gone"
+            android:src="@drawable/prod_down2" />
+
+        <LinearLayout
+            android:id="@+id/right_container"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:paddingLeft="14dip"
+            android:layout_marginEnd="14dp"
+            android:layout_toEndOf="@id/thumbnail_image_view"
+            android:layout_toRightOf="@id/thumbnail_image_view"
+            android:layout_marginRight="14dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/name_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:paddingEnd="0dp"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:paddingStart="0dp"
+                    android:text="商品名称"
+                    android:textColor="@color/gray_33"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/group_price_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="0dp"
+                    android:background="@android:color/transparent"
+                    android:focusable="false"
+                    android:text="¥5.00/斤"
+                    android:focusableInTouchMode="false"
+                    android:inputType="none"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/price_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="10dp"
+                    android:text="¥6.00/斤"
+                    android:visibility="visible"
+                    android:textColor="@color/gray_66"
+                    android:textSize="13sp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/info_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="0dp"
+                    android:background="@android:color/transparent"
+                    android:focusable="false"
+                    android:text="已售出66"
+                    android:focusableInTouchMode="false"
+                    android:inputType="none"
+                    android:singleLine="true"
+                    android:textColor="@color/green_0c"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/group_num_text_view"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginLeft="10dp"
+                    android:text="售出88成团"
+                    android:visibility="visible"
+                    android:textColor="@color/gray_66"
+                    android:textSize="13sp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

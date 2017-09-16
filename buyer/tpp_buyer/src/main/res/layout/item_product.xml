@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="8dip"
+    android:paddingLeft="4dip"
+    android:paddingRight="4dip"
+    android:paddingTop="8dip">
+
+    <ImageView
+        android:id="@+id/thumbnail_image_view"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/shape_stroke_line"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:src="@drawable/temp1" />
+
+    <LinearLayout
+        android:id="@+id/right_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_vertical"
+        android:layout_toRightOf="@id/thumbnail_image_view"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/content_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="left"
+                android:text="商品名称"
+                android:paddingBottom="3dp"
+                android:textColor="@color/gray_33"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/desc_text_view"
+                style="@style/Widget.TextView.Content.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="left|top"
+                android:text="描述: " />
+
+
+            <TextView
+                android:id="@+id/sell_number_text_view"
+                style="@style/Widget.TextView.Size11.Color99"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:text="已出售" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dip"
+            android:clickable="true">
+
+
+            <TextView
+                android:id="@+id/price_text_view"
+                style="@style/Widget.TextView.Content.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginTop="2dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:singleLine="true"
+                android:text="¥11.11"
+                android:textColor="@color/orange"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/unit_text_view"
+                style="@style/Widget.TextView.Size14.Color33"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:singleLine="true"
+                android:text="/斤" />
+
+            <Button
+                android:id="@+id/line_chart_btn"
+                android:layout_width="23dp"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ic_line_chart"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:paddingTop="2dp">
+
+        <ImageView
+            android:id="@+id/minus_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:src="@drawable/selector_minus_button" />
+
+        <TextView
+            android:id="@+id/number_text_view"
+            android:layout_width="32dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="4dip"
+            android:background="@android:color/transparent"
+            android:cursorVisible="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:inputType="number"
+            android:paddingBottom="4dip"
+            android:paddingLeft="2dip"
+            android:paddingRight="2dip"
+            android:paddingTop="4dip"
+            android:text="0"
+            android:textColor="@color/gray_33" />
+
+        <ImageView
+            android:id="@+id/add_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:src="@drawable/selector_add_button" />
+
+    </LinearLayout>
+
+</RelativeLayout>

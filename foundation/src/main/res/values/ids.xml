@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="ab_back_button"/>
+    <item type="id" name="ab_close_button"/>
+    <item type="id" name="ab_title_text_view"/>
+    <item type="id" name="glide_tag"/>
+    <item type="id" name="key_image_url"/>
+</resources>

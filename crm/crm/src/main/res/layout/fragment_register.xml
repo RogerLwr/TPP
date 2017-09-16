@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="top|center"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|center"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/phone_edt"
+                style="@style/registerEditView"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:hint="联系方式"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_dc"/>
+            <EditText
+                android:id="@+id/name_edt"
+                style="@style/registerEditView"
+                android:singleLine="true"
+                android:hint="姓名"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_dc"/>
+            <EditText
+                android:id="@+id/password_edt"
+                style="@style/registerEditView"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:hint="请输入六位以上字母和数字混合密码"/>
+
+            <View
+                android:id="@+id/pw_line_1"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_dc"/>
+            <EditText
+                android:id="@+id/again_password_edt"
+                style="@style/registerEditView"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:hint="请再次输入密码"/>
+
+            <View
+                android:id="@+id/pw_line_2"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_dc"/>
+            <EditText
+                android:id="@+id/store_name_edt"
+                style="@style/registerEditView"
+                android:singleLine="true"
+                android:hint="商店名称"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_dc"/>
+            <EditText
+                android:id="@+id/store_address_edt"
+                style="@style/registerEditView"
+                android:singleLine="true"
+                android:hint="商店地址"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_dc"/>
+            <TextView
+                android:id="@+id/at_area_tv"
+                style="@style/registerEditView"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:hint="所在区域"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_dc"/>
+            <TextView
+                android:id="@+id/at_market_tv"
+                style="@style/registerEditView"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:hint="所在商圈"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_dc"/>
+
+            <TextView
+                android:id="@+id/main_category_tv"
+                style="@style/registerEditView"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:hint="主营品类"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_dc"/>
+            <TextView
+                android:id="@+id/operate_category_tv"
+                style="@style/registerEditView"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:hint="经营品类"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_dc"/>
+            <!--
+            <EditText
+                android:id="@+id/min_amount_edt"
+                style="@style/registerEditView"
+                android:singleLine="true"
+                android:hint="起送金额"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_dc"/>
+            -->
+            <EditText
+                android:id="@+id/distribution_edt"
+                style="@style/registerEditView"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:hint="配送费,没有请填0"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_dc"/>
+            <EditText
+                android:id="@+id/min_distribution_edt"
+                style="@style/registerEditView"
+                android:singleLine="true"
+                android:inputType="number"
+                android:hint="免配送费最低总价"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_dc"/>
+            <TextView
+                android:id="@+id/shop_describe_tv"
+                style="@style/registerEditView"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:hint="店铺描述,50字以内,可不填"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_dc"/>
+            <TextView
+                android:id="@+id/distribution_describe_tv"
+                style="@style/registerEditView"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:hint="配送说明,50字以内,可不填"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_dc"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/gray_33"
+                    android:textSize="14sp"
+                    android:text="供货商级别:"/>
+                <RadioGroup
+                    android:id="@+id/supplier_type_radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/one_supplier_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/btn_150923_radio_selector"
+                        android:drawablePadding="9dp"
+                        android:padding="10dp"
+                        android:text="一级供货商"
+                        android:textColor="@color/gray_33"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/three_supplier_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/btn_150923_radio_selector"
+                        android:drawablePadding="9dp"
+                        android:padding="10dp"
+                        android:text="三级供货商"
+                        android:textColor="@color/gray_33"
+                        android:textSize="14sp" />
+                </RadioGroup>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_dc"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray_33"
+                    android:textSize="14sp"
+                    android:text="可配送商圈:"/>
+
+                <LinearLayout
+                    android:id="@+id/distribution_market_container"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/add_market_button"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/ic_151020_add_prod_img"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_register_submit"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/green"
+                android:text="提交"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

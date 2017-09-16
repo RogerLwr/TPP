@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        >
+        <TextView
+            android:id="@+id/orderformtrack_singleinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="10dp"
+            android:text="订单信息"
+            android:textColor="#525252"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/orderformtrack_orderstate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/orderformtrack_singleinfo"
+            android:layout_alignBottom="@+id/orderformtrack_singleinfo"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="5dp"
+            android:textColor="#f62121"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/orderformtrack_viewsecond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/orderformtrack_singleinfo"
+            android:layout_alignRight="@+id/orderformtrack_orderstate"
+            android:layout_below="@+id/orderformtrack_singleinfo"
+            android:background="@drawable/line_divider_content" />
+
+        <TextView
+            android:id="@+id/orderformtrack_numtx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/orderformtrack_singleinfo"
+            android:layout_below="@+id/orderformtrack_viewsecond"
+            android:paddingBottom="3dp"
+            android:text="订单号:"
+            android:textColor="#525252"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/order_id_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/orderformtrack_numtx"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/orderformtrack_numtx"
+            android:paddingBottom="3dp"
+            android:paddingTop="10dp"
+            android:textColor="#525252"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/orderformtrack_timetx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/orderformtrack_singleinfo"
+            android:layout_below="@+id/orderformtrack_numtx"
+            android:paddingBottom="3dp"
+            android:text="下单时间:"
+            android:textColor="#525252"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/order_dt_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/orderformtrack_timetx"
+            android:layout_alignBottom="@+id/orderformtrack_timetx"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/orderformtrack_timetx"
+            android:paddingBottom="3dp"
+            android:textColor="#525252"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/orderformtrack_phonetx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/orderformtrack_singleinfo"
+            android:layout_below="@+id/orderformtrack_timetx"
+            android:paddingBottom="3dp"
+            android:text="店家电话:"
+            android:textColor="#525252"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/saler_tel_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/orderformtrack_phonetx"
+            android:layout_alignBottom="@+id/orderformtrack_phonetx"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/orderformtrack_phonetx"
+            android:paddingBottom="3dp"
+            android:textColor="#525252"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/orderformtrack_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/orderformtrack_singleinfo"
+            android:layout_alignRight="@+id/orderformtrack_orderstate"
+            android:layout_below="@+id/orderformtrack_phonetx"
+            android:background="@drawable/line_divider_content" />
+
+        <LinearLayout
+            android:id="@+id/orderformtrack_goods"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:gravity="left"
+            android:layout_alignLeft="@+id/orderformtrack_numtx"
+            android:layout_below="@+id/orderformtrack_view"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            >
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/orderform_view1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orderformtrack_goods"
+            android:background="@drawable/line_delive_bottom" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/line_delive_bottom" />
+
+        <TextView
+            android:id="@+id/orderformtrack_tracktitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="10dp"
+            android:text="订单跟踪"
+            android:textColor="#525252"
+            android:textSize="18sp" />
+        <ImageView
+            android:id="@+id/orderformtrack_line1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line_divider_content"
+            android:layout_below="@+id/orderformtrack_tracktitle"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/orderformtrack_tracktitle"
+            android:layout_below="@+id/orderformtrack_tracktitle"
+            >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/track_light" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/imageView1"
+                android:src="@drawable/track_drak" />
+
+            <LinearLayout
+                android:id="@+id/track_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/imageView1"
+                android:layout_alignTop="@+id/imageView1"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:id="@+id/track_twocontext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="17sp"
+                    android:textColor="#38b700"/>
+
+                <TextView
+                    android:id="@+id/track_twotime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:textColor="#38b700" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_divider_content"
+                android:layout_above="@+id/track_one"
+                android:layout_toRightOf="@+id/imageView1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <LinearLayout
+                android:id="@+id/track_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/imageView2"
+                android:layout_alignTop="@+id/imageView2"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/track_onecontext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="17sp"
+                    android:textColor="#d0d0d0" />
+
+                <TextView
+                    android:id="@+id/track_onetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:textColor="#d0d0d0" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f4"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/hint_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="商品描述"
+        android:textSize="16sp"
+        android:textColor="@color/gray_33"
+        />
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@color/white"
+        android:gravity="start|top"
+        android:hint="请输入商品备注"
+        android:textSize="16sp"
+        android:maxLength="100"
+        android:textColor="@color/gray_33"
+        android:textColorHint="@color/gray_99"
+        android:padding="12dp">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/word_count_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textColor="@color/gray_99"
+        android:textSize="12sp"
+        android:padding="10dp"
+        android:text="0/100"
+        />
+
+</LinearLayout>

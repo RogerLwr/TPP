@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:gravity="top|center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:text="@string/setttingmain_push"
+            android:textColor="#525252"
+            android:textSize="15sp" />
+
+        <com.tianpingpai.widget.SwitchButton
+            android:id="@+id/push_toggle_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            app:onColor="@color/green"
+            android:checked="true"
+            tools:ignore="RelativeOverlap" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_delive_bottom" />
+
+    <LinearLayout
+        android:id="@+id/settingmain_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/replace_access_token_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/abc_list_selector_holo_dark"
+            android:clickable="true"
+            android:padding="12dip"
+            android:text="替换AccessToken"
+            android:textColor="@color/gray_33"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/help_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/abc_list_selector_holo_dark"
+            android:clickable="true"
+            android:padding="12dip"
+            android:text="@string/setttingmain_help"
+            android:textColor="@color/gray_4c"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dip"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dip"
+            android:background="@color/gray_e6" />
+
+        <TextView
+            android:id="@+id/feedback_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/abc_list_selector_holo_dark"
+            android:clickable="true"
+            android:padding="12dip"
+            android:text="@string/feedback"
+            android:textColor="@color/gray_4c"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dip"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dip"
+            android:background="@color/gray_e6" />
+
+        <TextView
+            android:id="@+id/about_us_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/abc_list_selector_holo_dark"
+            android:clickable="true"
+            android:padding="12dip"
+            android:text="@string/about_us"
+            android:textColor="@color/gray_4c"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dip"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dip"
+            android:background="@color/gray_e6" />
+
+        <TextView
+            android:id="@+id/check_update_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/abc_list_selector_holo_dark"
+            android:clickable="true"
+            android:padding="12dip"
+            android:text="@string/check_update"
+            android:textColor="@color/gray_4c"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dip"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dip"
+            android:background="@color/gray_e6" />
+
+        <RelativeLayout
+            android:id="@+id/rl_version_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/tv_version_name_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="12dp"
+                android:text="当前版本"
+                android:textColor="#525252"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/version_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_version_name_tag"
+                android:layout_marginLeft="15dp"
+                android:text="v1.0"
+                android:textColor="#525252"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dip"
+        android:layout_marginRight="12dip"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/red_button_selector"
+        android:text="@string/logout"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

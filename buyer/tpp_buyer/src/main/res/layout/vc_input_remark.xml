@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <com.tianpingpai.widget.ContainsEmojiEditText
+        android:id="@+id/remark_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@android:color/transparent"
+        android:gravity="top|left"
+        android:hint="请输入备注"
+        android:textColor="@color/gray_33"
+        android:textSize="16sp">
+
+        <requestFocus />
+    </com.tianpingpai.widget.ContainsEmojiEditText>
+
+</LinearLayout>

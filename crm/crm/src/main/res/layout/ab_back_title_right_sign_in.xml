@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/abc_action_bar_default_height_material"
+    android:background="@color/white" >
+
+    <ImageView
+        android:id="@+id/ab_right_button"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="16dp"
+        android:background="@drawable/abc_list_selector_holo_dark"
+        android:src="@drawable/ic_150922_addr"
+        android:textColor="@color/green"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@id/ab_title_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/t_customer_detail"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@id/ab_back_button"
+        android:layout_width="56dip"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/abc_list_selector_holo_dark"
+        android:clickable="true"
+        android:contentDescription="@string/empty"
+        android:padding="16dip"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_15_09_14_back" />
+
+</RelativeLayout>

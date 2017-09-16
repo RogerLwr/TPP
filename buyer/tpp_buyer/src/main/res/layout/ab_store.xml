@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/action_bar_height">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:navigationIcon="@drawable/ic_back_green">
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:id="@+id/right_container"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/shopping_cart_view"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/abc_list_selector_holo_light"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:enabled="true"
+                android:gravity="center"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_cart_green" />
+
+            <com.tianpingpai.widget.BadgeView
+                android:id="@+id/cart_badge_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/image_view"
+                android:layout_marginBottom="-8dp"
+                android:layout_marginLeft="-10dp"
+                android:layout_toRightOf="@id/image_view"
+                app:style="FILL"
+                app:textSize="8sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/search_button"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/abc_list_selector_holo_light"
+            android:clickable="true"
+            android:enabled="true"
+            android:gravity="center"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_search_green" />
+
+        <ImageView
+            android:id="@+id/fav_button"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/abc_list_selector_holo_light"
+            android:clickable="true"
+            android:enabled="true"
+            android:gravity="center"
+            android:scaleType="centerInside"
+            android:src="@drawable/ab_ic_un_favourite"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/ab_title_text_view"
+        style="@style/Widget.TextView.ActionBar.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="56dp"
+        android:layout_marginStart="56dp"
+        android:layout_toLeftOf="@id/right_container" />
+
+    <View
+        android:id="@+id/divider_line"
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:layout_alignParentBottom="true"
+        android:background="#bababa" />
+</RelativeLayout>

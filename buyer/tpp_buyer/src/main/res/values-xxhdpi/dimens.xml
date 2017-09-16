@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+	<dimen name="top_title_tx_size">5sp</dimen>
+	<dimen name="back_text_size">20sp</dimen>
+	<dimen name="margin_own_rl">10dp</dimen>
+	<dimen name="margin_own_ll">10dp</dimen>
+	<dimen name="margin_own_ll_bottom">40dp</dimen>
+	<dimen name="height_own_rl_top">180dp</dimen>
+	<dimen name="home_category_height">60dp</dimen>
+</resources>

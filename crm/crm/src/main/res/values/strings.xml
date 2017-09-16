@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="empty_contract">当前客户没有日志,快去工作吧~</string>
+    <string name="empty_orders">目前还没有订单,快去工作吧~</string>
+    <string name="empty_customers">目前没有客户,快去工作吧~</string>
+    <string name="empty_logs">目前没有日志,快去工作吧~</string>
+    <string name="empty_message">暂时还没有消息哦~</string>
+
+    <string name="app_name">天平派CRM</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="user_name">用户名</string>
+    <string name="password">密码</string>
+    <string name="forgot_password">忘记密码？</string>
+    <string name="login">登录</string>
+    <string name="not_logged_in_yet">亲还没有登录哦</string>
+    <string name="register">注册</string>
+    <string name="empty"></string>
+    <string name="login_out">退出账号</string>
+
+    <!-- 登录 -->
+    <string name="user_name_cannot_be_empty">用户名不能为空</string>
+    <string name="password_cannot_be_empty">密码不能为空</string>
+    <string name="phone_cannot_be_empty">电话号码不能为空！</string>
+    <string name="place_edit_old_pw">请输入旧密码</string>
+    <string name="place_edit_new_pw">请输入新密码</string>
+    <string name="confirmation_new_pw">确认新密码</string>
+
+
+
+    <string name="home">首页</string>
+    <string name="work">工作</string>
+
+    <!-- 首页 -->
+    <string name="sy_add_customer">新增客户</string>
+    <string name="sy_add_order_customer">下单客户</string>
+    <string name="sy_tody_orderr">今日下单</string>
+    <string name="sy_tody_visit">今日拜访</string>
+    <string name="sy_my_foot">我的足迹</string>
+    <string name="sy_my_integral">我的积分</string>
+    
+    <!-- 订单 -->
+    <string name="dd_title">订单</string>
+    <string name="dd_all_orders">全部订单</string>
+    <string name="dd_no_dispose_orders">未处理订单</string>
+    <string name="dd_no_harvest_orders">未收货订单</string>
+    <string name="dd_complete_orders">已完成订单</string>
+    <string name="dd_new_customer_orders">新客户订单</string>
+
+    <!-- 客户 -->
+    <string name="kh_title">客户</string>
+    <string name="kh_my_buyer">我的买家</string>
+    <string name="kh_my_seller">我的卖家</string>
+    <string name="kh_check_repeat">买家查询</string>
+    <string name="kh_search_hint">请输入客户名称</string>
+
+    <!-- 工作 -->
+    <string name="gz_title">工作</string>
+    <string name="gz_sign_in">早起签到</string>
+    <string name="gz_buyer_approve">买家审批</string>
+    <string name="gz_regist_seller">注册卖家</string>
+    <string name="gz_my_statistics">我的统计</string>
+    <string name="gz_backlog">待办事项</string>
+    <string name="gz_customer_claim">客户认领</string>
+    <string name="gz_add_buyer">添加买家</string>
+    <string name="gz_add_seller">添加卖家</string>
+    <string name="gz_contract_manager">合同上传</string>
+    <string name="gz_merchants_statistical">招商统计</string>
+
+
+    <!-- 我的 -->
+    <string name="login_first">请先登录</string>
+    <string name="login_sucess">登录成功</string>
+    <string name="logout_confirm">确定要注销吗？</string>
+    <string name="basic_info">基本信息</string>
+    <string name="my_clients">我的客户</string>
+    <string name="my_orders">我的订单</string>
+    <string name="my_msgs">我的消息</string>
+    <string name="my_branches">我的伙伴</string>
+    <string name="my_logout">注销</string>
+    <string name="my_register">商家注册</string>
+    <string name="my_stastics">我的统计</string>
+    <string name="common_infos">常用信息</string>
+    <string name="qa">常见问题</string>
+    <string name="contacts">我的同事</string>
+    <string name="order">订单</string>
+    <string name="client">客户</string>
+    <string name="me">我</string>
+
+    <!-- 新客户 -->
+
+    <string name="no_arae_city_selected">您还没有没有选择地区</string>
+    <string name="no_turnover_selected">没有选择日营业额</string>
+    <string name="no_purchase_selected">没有选择日采购额</string>
+    <string name="no_buyer_type_selected">没有选择业态类型</string>
+    <string name="no_num_seat_selected">没有填写座位个数</string>
+    <string name="no_image_selected">没有选择图片</string>
+    <string name="no_market_selected">没有选中的市场</string>
+    <string name="add_comment_success">评论成功</string>
+    <string name="add_customer_success">添加用户成功</string>
+    <string name="marget_manager">买家负责人:</string>
+    <string name="run_manager">卖家负责人:</string>
+    <string name="client_name">客户姓名:</string>
+    <string name="contact">联系方式:</string>
+    <string name="user_type">用户类型:</string>
+    <string name="store_name">店铺名称:</string>
+    <string name="store_address">店铺地址:</string>
+    <string name="submit">提交</string>
+    <string name="done">完成</string>
+    <string name="detail_metarial">详细资料</string>
+    <string name="delete_user">删除用户</string>
+    <string name="edit_info">修改资料</string>
+    <string name="customer_name">客户姓名: </string>
+    <string name="customer_detail">详细资料</string>
+    <string name="approve">审批</string>
+    <string name="sign_in">签到</string>
+    <string name="name">姓名:</string>
+    <string name="department">所属部门:</string>
+    <string name="role">职位名称:</string>
+    <string name="product_list">商品清单</string>
+    <string name="filter">筛选</string>
+    <string name="place_holder">占位符</string>
+    <string name="customer_number">总客户数目:</string>
+    <string name="order_number">总订单数目:</string>
+    <string name="total_amount">总订单金额:</string>
+    <string name="t_customer_detail">客户详情</string>
+    <string name="cancel">取消</string>
+    <string name="okay">确定</string>
+    <string name="market_area">商圈</string>
+    <string name="t_order_detail">订单详情</string>
+    <string name="title_new_customer">新客户</string>
+    <string name="title_add_comment">增加拜访</string>
+    <string name="title_login">登录</string>
+    <string name="title_marketer_detail">详细资料</string>
+    <string name="title_subordinates">我的伙伴</string>
+    <string name="search">搜索</string>
+    <string name="invalid_phone_number">不是有效的手机号</string>
+
+    <!-- 客户 -->
+    <string name="tel">联系方式:</string>
+
+    <string-array name="user_types">
+        <item>买家</item>
+        <item>卖家</item>
+    </string-array>
+
+    <string name="disapprove">拒绝</string>
+    <string name="accept">同意</string>
+    <string name="user_category">买家类型</string>
+
+    <!-- 图片选择器 -->
+
+    <string name="all_pic">全部图片</string>
+    <string name="preview_without_num">预览</string>
+    <string name="preview_with_num">预览(%1$d)</string>
+    <string name="choose_pic_finish">完成</string>
+    <string name="choose_pic_finish_with_num">完成(%1$d/%2$d)</string>
+    <string name="choose_pic_num_out_of_index">你最多只能选择%1$d张照片</string>
+    <string name="choose_pic">选择</string>
+    <string name="not_choose_any_pick">你还没有选择任何图片</string>
+    <string name="uploading_images">正在批量上传</string>
+
+    <string name="empty_coupons">该客户还没有优惠券哦~</string>
+
+</resources>

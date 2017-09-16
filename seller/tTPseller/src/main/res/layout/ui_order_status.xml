@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OrderStatusFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="18dp"
+        android:text="交易成功"
+        android:textColor="@color/gray_99"
+        android:textSize="12sp"
+        android:layout_marginStart="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="32dp"
+        android:text="￥100.00"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:layout_marginStart="4dp" />
+
+    <View
+        style="@style/Widget.Line"
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/place_holder"
+        android:textColor="@color/orange"
+        android:textSize="13sp"
+        android:layout_marginStart="14dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="13dp"
+        android:text="订单来源:2015070723234123123"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:layout_marginStart="14dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="13dp"
+        android:text="订单状态:已完成"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:layout_marginStart="14dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="13dp"
+        android:text="下单时间:2015.07.16 15:32:22"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:layout_marginStart="14dp" />
+
+</LinearLayout>

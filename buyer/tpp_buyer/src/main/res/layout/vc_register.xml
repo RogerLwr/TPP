@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f4"
+    android:orientation="vertical"
+    android:paddingEnd="28dp"
+    android:paddingLeft="28dp"
+    android:paddingRight="28dp"
+    android:paddingStart="28dp"
+    android:paddingTop="24dp">
+
+    <LinearLayout
+        android:id="@+id/first_step_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_bg_white_top"
+            android:orientation="horizontal"
+            android:padding="14dp">
+
+            <EditText
+                android:id="@+id/city_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:enabled="false"
+                android:inputType="none"
+                android:text="@string/current_city"
+                android:textColor="@color/gray_33"
+                android:textColorHint="@color/gray_99"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/select_city_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dp"
+                android:text="@string/switch_city"
+                android:textColor="@color/green" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/item_bg_white_middle"
+            android:orientation="horizontal"
+            android:padding="14dp">
+
+            <EditText
+                android:id="@+id/phone_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="@string/hint_input_user_name"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:padding="0dp"
+                android:textColor="@color/gray_33"
+                android:textColorHint="@color/gray_99"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/item_bg_white_bottom"
+            android:orientation="horizontal"
+            android:padding="14dp">
+
+            <EditText
+                android:id="@+id/validation_code_edit_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="@string/hint_input_validation_code"
+                android:inputType="number"
+                android:maxLength="6"
+                android:padding="0dp"
+                android:textColor="@color/gray_33"
+                android:textColorHint="@color/gray_99"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/get_validation_code_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:ems="6"
+                android:gravity="right"
+                android:text="@string/get_validation_code"
+                android:textColor="@color/green" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/next_step_button"
+            style="@style/Widget.Button.Green"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/next_step" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:gravity="center_horizontal"
+            android:text="如果长时间没收到验证码，请联系我们的客服"
+            android:textColor="@color/gray_33"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/service_line_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="6dp"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:text="@string/service_line"
+            android:textColor="#ff4e00"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/second_step_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <EditText
+            android:id="@+id/store_name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/item_bg_white_top"
+            android:hint="@string/hint_input_store_name"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColorHint="@color/gray_99" />
+
+        <EditText
+            android:id="@+id/customer_name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/item_bg_white_top"
+            android:hint="@string/hint_input_customer_name"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColorHint="@color/gray_99" />
+
+        <EditText
+            android:id="@+id/password_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/item_bg_white_middle"
+            android:hint="@string/hint_input_password_"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColorHint="@color/gray_99" />
+
+        <EditText
+            android:id="@+id/password_repeat_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/item_bg_white_bottom"
+            android:hint="@string/hint_repeat_password"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColorHint="@color/gray_99" />
+
+        <TextView
+            android:id="@+id/submit_button"
+            style="@style/Widget.Button.Green"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/register" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/agreement_check_box"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/check_box_selector_rect_green"
+                android:button="@null"
+                android:checked="true" />
+
+            <TextView
+                android:id="@+id/agreement_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:textColor="#ff4e00"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

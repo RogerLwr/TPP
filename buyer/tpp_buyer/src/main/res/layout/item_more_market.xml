@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/abc_list_selector_holo_light"
+    android:clickable="true">
+
+    <TextView
+        android:id="@+id/load_more_text_view"
+        style="@style/Widget.TextView.Item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="@string/click_to_load_more"
+        android:textColor="@color/gray_99" />
+
+</LinearLayout>

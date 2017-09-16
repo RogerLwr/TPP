@@ -1,0 +1,9 @@
+[submodule "design"]
+	path = design
+	url = git@git.tianpingpai.com:android/design.git
+[submodule "foundation"]
+	path = foundation
+	url = git@git.tianpingpai.com:android/foundation.git
+[submodule "umengUpdate"]
+	path = umengUpdate
+	url = git@git.tianpingpai.com:android/umengupdate.git

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dip"
+    android:layout_marginTop="10dip"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="16dip"
+    android:paddingRight="16dip" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:visibility="gone"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_150916_visited_customer_header"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_66"
+            android:textSize="15sp"
+            android:text="合同编号："/>
+
+        <TextView
+            android:id="@+id/contract_number_text_view"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip"
+            android:layout_weight="1"
+            android:drawablePadding="16dip"
+            android:text="@string/place_holder"
+            android:textColor="@color/gray_66"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/contract_status_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/place_holder"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray_66"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_e9" />
+
+    <TextView
+        android:id="@+id/legal_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:text="@string/place_holder"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/gray_66"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/update_time_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/place_holder"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/gray_66"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/contract_fail_des_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="5dp"
+        android:text="@string/place_holder"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/gray_66"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="8dip"
+        android:background="@color/gray_e9" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="负责人: "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray_66"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/marget_manager_text_view"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_weight="2"
+            android:text="@string/place_holder"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/green_0c"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/customer_info_button"
+            android:layout_width="72dp"
+            android:layout_height="32dip"
+            android:visibility="gone"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_150916_green_conners5_selector"
+            android:text="客户资料"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/look_contract_button"
+            android:layout_width="72dp"
+            android:layout_height="32dip"
+            android:background="@drawable/btn_150916_green_conners5_selector"
+            android:text="查看"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

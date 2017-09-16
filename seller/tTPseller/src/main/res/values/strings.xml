@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="empty_orders">目前还没有订单,快去工作吧~</string>
+    <string name="empty_bills">目前还没有账单明细,快去工作吧~</string>
+    <string name="empty_group">您还没有开展过团购活动哦~</string>
+    <string name="empty_coupons">您还没有优惠券哦~</string>
+
+    <string name="app_name">天平派商家</string>
+    <!-- 系统全局页面 -->
+    <string name="dialog_ok">确定</string>
+    <string name="dialog_not">取消</string>
+    <string name="dialog_loading">数据加载中...</string>
+    <!-- 欢迎页面 -->
+    <string name="welcome_record">北京兄弟之恒科技有限公司</string>
+    <string name="guide_start">进入天平派卖家</string>
+
+    <!-- 提现页面 -->
+    <string name="draw_cash_bank">到账时间以银行规定为准</string>
+    <string name="draw_cash_alibaba">次日24点前到账</string>
+    <string name="draw_cash_success">提现申请已提交，请注意查收</string>
+
+     <!-- 个人中心 -->
+     <string name="ownmain_nomoney">待付款</string>
+     <string name="ownmain_nodelivery">待收获</string>
+     <string name="ownmain_allorder">全部订单</string>
+     <string name="ownmain_address">我的送货地址</string>
+     <string name="ownmain_wallte">我的钱包</string>
+     <string name="ownmain_messages">消息中心</string>
+     <string name="ownmain_tel">400-6406-010</string>
+     <string name="ownmain_customer">客服每天8:30-21:30在线</string>
+     
+     <!-- 登录 -->
+     <string name="login_title">登录</string>
+     <string name="login_nopassword">忘记密码?</string>
+     <string name="login_phonenum">手机号码:</string>
+     <string name="login_pwd">密码:</string>
+     <string name="login_showpwd">显示密码</string>
+     <string name="login_gonepwd">不显示密码</string>
+     <string name="login_phonenumtxt">请输入手机号码</string>
+     <string name="login_pwdtxt">请输入密码</string>
+     
+     <string name="forget_validate">验证码</string>
+     
+     <!-- 订单单管理 -->
+     <string name="orderform_new">新订单</string>
+     <string name="orderform_finish">未发货</string>
+     <string name="orderform_all">已完成</string>
+     <string name="orderform_numtx">订单号:</string>
+     <string name="orderform_pricetx">金额:</string>
+     <string name="orderform_ordertimetx">配送时间:</string>
+     <string name="orderform_orderaddresstx">配送地址:</string>
+     <string name="orderform_orderstatetx">订单状态:</string>
+     <string name="orderform_lookorderdes">查看订单详情</string>
+
+     <!-- 商品管理 -->
+     <string name="managegoods_shelves">上架</string>
+     <string name="managegoods_offshelves">下架</string>
+
+     <!-- 设置 -->
+     <string name="settings">设置</string>
+     <string name="setttingmain_push">接收通知</string>
+     <string name="setttingmain_help">帮助中心</string>
+     <string name="setttingmain_adjust">意见反馈</string>
+     <string name="setttingmain_aboutus">关于我们</string>
+     <string name="setttingmain_updated">检查更新</string>
+
+     <!-- 消费详情流水 -->
+     <string name="moneywater_pay">在线支出</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_feedback">Feedback</string>
+    <string name="home">首页</string>
+    <string name="order">订单</string>
+    <string name="product">商品</string>
+    <string name="me">我</string>
+    <string name="place_holder">占位符</string>
+    <string name="register">注册</string>
+    <string name="about_us">关于我们</string>
+    <string name="feedback">意见反馈</string>
+    <string name="check_update">检查更新</string>
+    <string name="logout">退出帐号</string>
+
+    <string name="my_activities">我的活动</string>
+    <string name="my_journals">我的明细</string>
+    <string name="my_comments">我的评价</string>
+    <string name="new_product">新增商品</string>
+    <string name="batch_edit">批量改价</string>
+    <string name="group_shopping">我的团购</string>
+    <string name="my_shop_code">我的微店</string>
+    <string name="advertise">营销推广</string>
+    <string name="upstream">我要采购</string>
+    <string name="draw_cash">钱包提现</string>
+
+    <!-- 订单相关  -->
+    <string name="reject_order">拒绝订单</string>
+    <string name="accept_and_send_order">接受并完成发货</string>
+    <string name="change_price">修改价格</string>
+    <string name="buyer_remark">买家留言:</string>
+    <string name="order_info">订单信息</string>
+    <string name="amount_sum">金额小计</string>
+    <string name="amount_info">商品金额:</string>
+    <string name="freight">运费金额:</string>
+    <string name="coupon_amount">优惠金额:</string>
+    <string name="pay_amount">支付金额:</string>
+    <string name="total_amount">合计金额:</string>
+    <string name="products_info">商品信息</string>
+</resources>

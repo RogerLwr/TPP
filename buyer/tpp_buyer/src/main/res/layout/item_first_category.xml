@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/name_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="12dip"
+        android:textColor="@color/gray_f2"
+        android:textSize="15sp" />
+
+    <com.tianpingpai.widget.BadgeView
+        android:id="@+id/badge_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rec_circle"
+        android:gravity="center"
+        android:padding="1dip"
+        android:textColor="@color/white"
+        app:style="FILL"
+        app:textSize="7sp"
+        tools:ignore="SmallSp" />
+
+</RelativeLayout>

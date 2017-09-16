@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f4"
+    android:gravity="top|center"
+    android:orientation="vertical">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/white">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="收货人:"
+                android:textColor="@color/gray_33"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/name_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:ems="10"
+                android:hint="收货人姓名"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@color/gray_33"
+                android:textColorHint="@color/gray_99"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="@color/gray_ba" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="手机号码 :"
+                android:textColor="@color/gray_33"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/contact_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:ems="10"
+                android:hint="您的联系方式"
+                android:inputType="phone"
+                android:padding="10dp"
+                android:textColor="@color/gray_33"
+                android:textColorHint="@color/gray_99"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp" />
+
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="@color/gray_ba" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="所在区域:"
+                android:textColor="@color/gray_33"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/select_area_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="2"
+                android:background="@null"
+                android:gravity="end|center"
+                android:hint="请选择区域"
+                android:padding="10dp"
+                android:textColor="@color/gray_33"
+                android:textColorHint="@color/gray_99"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/common_jump" />
+
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="@color/gray_ba" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="收货地址 :"
+                android:textColor="@color/gray_33"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/address_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:clickable="false"
+                android:gravity="top|start"
+                android:hint="输入并选择您的店铺地址"
+                android:padding="10dp"
+                android:text=""
+                android:textColor="@color/gray_33"
+                android:textColorHint="@color/gray_99"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="@color/gray_ba" />
+
+        <ListView
+            android:id="@+id/address_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="门牌号:"
+                android:textColor="@color/gray_33"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/code_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="top|start"
+                android:hint="输入您的门牌号等详细信息"
+                android:padding="10dp"
+                android:textColor="@color/gray_33"
+                android:textColorHint="@color/gray_99"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp" />
+        </TableRow>
+
+    </TableLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_divider_content" />
+
+    <Button
+        android:id="@+id/submit_button"
+        style="@style/Widget.Button.Green"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="保存"
+        android:visibility="visible" />
+
+</LinearLayout>

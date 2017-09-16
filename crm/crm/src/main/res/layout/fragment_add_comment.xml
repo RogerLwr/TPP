@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f1"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dip"
+        android:background="@color/gray_e6" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="64dip"
+                android:layout_height="64dip"
+                android:contentDescription="@string/empty"
+                android:src="@drawable/ic_150915_login_header" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dip"
+                android:layout_marginStart="8dip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/place_holder"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/gray_33"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/date_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dip"
+                    android:text="@string/place_holder"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/gray_71"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/content_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:background="@drawable/bg_shape_150922_approve_corners5_gray_ed"
+            android:ems="10"
+            android:hint="入拜访内容"
+            android:inputType="text"
+            android:minLines="3"
+            android:padding="8dp"
+            android:textColor="@color/gray_33"
+            android:textColorHint="@color/gray_66"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/address_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_150925_add_visit_loc"
+            android:text="点击签到"
+            android:textColor="@color/gray_33"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Widget.LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/visit_alone_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableLeft="@drawable/btn_150923_radio_selector"
+                android:drawablePadding="8dp"
+                android:padding="10dp"
+                android:text="单独拜访"
+                android:textColor="@color/gray_33"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableLeft="@drawable/btn_150923_radio_selector"
+                android:drawablePadding="8dp"
+                android:drawableStart="@drawable/btn_150923_radio_selector"
+                android:padding="10dp"
+                android:text="陪同下属拜访"
+                android:textColor="@color/gray_33"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit_button"
+        style="@style/Widget.Button.Green"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dip"
+        android:layout_marginRight="12dip"
+        android:layout_marginTop="16dip"
+        android:text="@string/submit" />
+
+</LinearLayout>

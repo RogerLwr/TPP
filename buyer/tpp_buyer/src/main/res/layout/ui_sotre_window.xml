@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/notification_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="28dip"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:background="#fff7d6"
+
+        android:clickable="true"
+        android:drawableLeft="@drawable/ab_ic_sound_151113"
+        android:drawablePadding="3dip"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingLeft="16dip"
+        android:paddingRight="16dip"
+        android:singleLine="true"
+        android:textColor="@color/gray_66"
+        android:textSize="13sp"
+        android:visibility="visible" />
+
+    <View
+        android:id="@+id/notification_line_view"
+        android:layout_width="match_parent"
+        android:layout_height="0.6dip"
+        android:layout_below="@id/notification_text_view"
+        android:background="@color/gray_e6" />
+
+    <LinearLayout
+        android:id="@+id/bottom_container"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/trans"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="32dip"
+                android:layout_height="32dip"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:src="@drawable/btn_shopping_cart_151113" />
+
+            <com.tianpingpai.widget.BadgeView
+                android:id="@+id/category_num_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                app:style="FILL"
+                app:textSize="12sp"
+                tools:ignore="SmallSp" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:background="#585858"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/price_sum_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/min_amount_text_view"
+                    style="@style/Widget.TextView.Content.Small"
+                    android:layout_width="wrap_content"
+                    android:textSize="11sp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="1.5dp"
+                    android:gravity="right"
+                    android:paddingLeft="6dip"
+                    android:paddingRight="6dip"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/freight_text_view"
+                style="@style/Widget.TextView.Content.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:textColor="@color/white"
+                android:textSize="11sp"
+                tools:ignore="SmallSp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/add_to_cart_button"
+            style="@style/Widget.Button.Green.Solid"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="加入购物车"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/category_list_view"
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_container"
+        android:layout_below="@id/notification_text_view"
+        android:divider="@color/gray_cc"
+        android:dividerHeight="0.3dp"
+        android:scrollbars="none" />
+
+    <View
+        style="@style/Widget.Line"
+        android:layout_width="0.6dip"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@id/category_list_view"
+        android:layout_alignTop="@id/category_list_view" />
+
+    <ListView
+        android:id="@+id/product_list_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@id/category_list_view"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/category_list_view"
+        android:layout_toRightOf="@id/category_list_view"
+        android:background="@color/white"
+        android:divider="@drawable/divider_gray_left10"
+        android:dividerHeight="0.3dip" />
+
+
+</RelativeLayout>

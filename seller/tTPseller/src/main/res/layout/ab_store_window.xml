@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/action_bar_height"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/ab_title_text_view"
+        style="@style/Widget.TextView.ActionBar.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="商品管理"
+        android:textColor="@color/green" />
+
+    <TextView
+        android:id="@+id/ab_edit_button"
+        style="@style/Widget.TextView.ActionBar.RightButton"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:text="管理"
+        android:textColor="@color/green"
+        android:layout_alignParentStart="true"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp" />
+
+
+    <ImageView
+        android:id="@+id/ab_search_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/abc_list_selector_holo_dark"
+        android:clickable="true"
+        android:paddingBottom="14dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="14dp"
+        android:src="@drawable/ab_ic_search"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp" />
+
+    <ImageView
+        android:id="@+id/ab_add_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/ab_search_button"
+        android:layout_toStartOf="@id/ab_search_button"
+        android:background="@drawable/abc_list_selector_holo_dark"
+        android:clickable="true"
+        android:paddingBottom="14dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="14dp"
+        android:src="@drawable/ab_ic_add"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp" />
+
+</RelativeLayout>

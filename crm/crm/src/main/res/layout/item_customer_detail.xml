@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dip"
+        android:background="@color/gray_e6" />
+
+    <LinearLayout
+        android:id="@+id/top_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:background="@color/white"
+            android:padding="10dip">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/empty"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_150916_visited_customer_header" />
+
+            <TextView
+                android:id="@+id/sale_name_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:text="@string/place_holder"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/gray_33" />
+
+            <TextView
+                android:id="@+id/contact_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:autoLink="phone"
+                android:linksClickable="true"
+                android:text="@string/place_holder"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dip"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/gray_e6" />
+
+        <TextView
+            android:id="@+id/store_name_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="8dp"
+            android:text="店铺名称: "
+            android:textColor="@color/gray_33"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/user_type_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="6dp"
+            android:text="商家类型: "
+            android:textColor="@color/gray_33"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="6dp"
+            android:text="所属商圈: "
+            android:textColor="@color/gray_33"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/store_address_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="6dp"
+            android:text="店铺地址: "
+            android:textColor="@color/gray_33"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_f1"
+            android:padding="8dip"
+            android:paddingBottom="4dip"
+            android:paddingLeft="12dip">
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dip"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingBottom="4dip">
+
+                <TextView
+                    android:id="@+id/today_orders_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:paddingBottom="4dip"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/green_0c"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="今日订单"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/gray_33"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+            <!--<TextView
+                android:id="@+id/today_orders_text_view"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="4dip"
+                android:text="今日订单\n(1000)"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="14sp" />-->
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dip"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingBottom="4dip">
+
+                <TextView
+                    android:id="@+id/this_week_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:paddingBottom="4dip"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/green_0c"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="本周订单"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/gray_33"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <!--<TextView
+                android:id="@+id/this_week_text_view"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="4dip"
+                android:text="今日订单\n(1000)"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="14sp" />-->
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dip"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingBottom="4dip">
+
+                <TextView
+                    android:id="@+id/more_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:paddingBottom="4dip"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/green_0c"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="本月订单"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/gray_33"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <!--<TextView
+                android:id="@+id/more_text_view"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="4dip"
+                android:text="更多订单\n(1000)"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="14sp" />-->
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dip"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingBottom="4dip">
+
+                <TextView
+                    android:id="@+id/all_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:paddingBottom="4dip"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/green_0c"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="本月订单"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/gray_33"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <!--<TextView
+                android:id="@+id/all_text_view"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="4dip"
+                android:text="更多订单\n(1000)"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="14sp" />-->
+
+
+            <ImageView
+                android:id="@+id/add_button"
+                android:layout_width="48dip"
+                android:layout_height="48dip"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/abc_list_selector_holo_dark"
+                android:padding="10dip"
+                android:scaleType="center"
+                android:src="@drawable/ic_add_gray"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_f1"
+            android:padding="8dip"
+            android:paddingBottom="4dip"
+            android:paddingLeft="12dip">
+
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dip"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingBottom="4dip">
+
+                <TextView
+                    android:id="@+id/today_fee_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:paddingBottom="4dip"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/green_0c"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="今日流水"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/gray_33"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <!--        <TextView
+                        android:id="@+id/today_fee_text_view"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dip"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="4dip"
+                        android:text="今日订单\n(1000)"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="14sp" />-->
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dip"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingBottom="4dip">
+
+                <TextView
+                    android:id="@+id/week_fee_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:paddingBottom="4dip"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/green_0c"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="本周流水"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/gray_33"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <!--<TextView
+                android:id="@+id/week_fee_text_view"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="4dip"
+                android:text="今日订单\n(1000)"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="14sp" />-->
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dip"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingBottom="4dip">
+
+                <TextView
+                    android:id="@+id/month_fee_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:paddingBottom="4dip"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/green_0c"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="本月流水"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/gray_33"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <!--<TextView
+                android:id="@+id/month_fee_text_view"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="4dip"
+                android:text="更多订单\n(1000)"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="14sp" />-->
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dip"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingBottom="4dip">
+
+                <TextView
+                    android:id="@+id/more_fee_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:paddingBottom="4dip"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/green_0c"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="全部流水"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/gray_33"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

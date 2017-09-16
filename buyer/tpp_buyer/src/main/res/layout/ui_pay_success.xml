@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/success_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_person"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:paddingBottom="60dp"
+        android:paddingTop="60dp"
+        android:src="@drawable/ic_151125_commit_success" />
+
+    <TextView
+        android:id="@+id/tv_rem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_person"
+        android:layout_centerHorizontal="true"
+        android:text="恭喜你！"
+        android:textColor="@color/gray_33"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/pay_msg_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_rem"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="支付成功! 接下来您可以:"
+        android:textColor="@color/gray_33"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:id="@+id/btn_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pay_msg_text_view"
+        android:layout_marginTop="65dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/buy_more_button"
+            style="@style/Widget.Button.Green.Bordered"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="去首页逛逛" />
+
+        <Button
+            android:id="@+id/go_order_button"
+            style="@style/Widget.Button.Green.Bordered"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="查看订单状态"
+            android:textColor="@color/green_0c" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+</RelativeLayout>

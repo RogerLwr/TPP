@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#000</color>
+    <color name="black_26">#262626</color>
+    <color name="gray_33">#333333</color>
+    <color name="gray_3b_85p">#D93b3b3b</color>
+    <color name="gray_4c">#4c4c4c</color>
+    <color name="gray_4d">#4d4d4d</color>
+    <color name="gray_50">#505050</color>
+    <color name="gray_5d">#5d5d5d</color>
+    <color name="gray_66">#666666</color>
+    <color name="gray_71">#717171</color>
+    <color name="gray_80">#808080</color>
+    <color name="gray_8a">#8a8a8a</color>
+    <color name="gray_8c">#8c8c8c</color>
+    <color name="gray_99">#999999</color>
+    <color name="gray_aa">#aaaaaa</color>
+    <color name="gray_af">#afafaf</color>
+    <color name="gray_a9">#a9a9a9</color>
+    <color name="gray_b2">#b2b2b2</color>
+    <color name="gray_ba">#bababa</color>
+    <color name="gray_ac">#acacac</color>
+    <color name="gray_cc">#cccccc</color>
+    <color name="gray_dc">#dcdcdc</color>
+    <color name="gray_f1">#f1f1f1</color>
+    <color name="gray_f2">#f2f2f2</color>
+    <color name="gray_f4">#f4f4f4</color>
+    <color name="gray_f5">#f5f5f5</color>
+    <color name="gray_f6">#f6f6f6</color>
+    <color name="gray_ff">#ffffff</color>
+    <color name="gray_e2">#e2e2e2</color>
+    <color name="gray_e6">#e6e6e6</color>
+    <color name="gray_e9">#e9e9e9</color>
+    <color name="gray_e8">#e8e8e8</color>
+    <color name="gray_eb">#ebebeb</color>
+    <color name="gray_ec">#ececec</color>
+    <color name="gray_ed">#ededed</color>
+    <color name="gray_ee">#eee</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#ff0000</color>
+    <color name="red_e92">#e92701</color>
+    <color name="red_ff6">#ff6000</color>
+    <color name="red_ffd">#ffdcc3</color>
+    <color name="red_ffe">#ffe1cf</color>
+    <color name="green">#0cc486</color>
+    <color name="green_highlight">#008d5d</color>
+
+    <color name="green_19">#19BB73</color>
+    <color name="green_0c">#00C486</color>
+    <color name="orange">#fd721f</color>
+    <color name="blue">#0000ff</color>
+    <color name="blue_0c">#0C60FF</color>
+    <color name="blue_0d">#0D5FF3</color>
+    <color name="bg_20">#20B2AA</color>
+    <color name="bg_ccc">#ccc</color>
+
+    <color name="line_ba">#bababa</color>
+
+    <color name="trans">#0000</color>
+    <color name="trans_32_black">#3000</color>
+    <color name="trans_32_white">#3fff</color>
+    <color name="trans_40_black">#6000</color>
+    <color name="trans_half">#ffffff</color>
+    <color name="tx_666">#666</color>
+    <color name="trans_a_black">#a000</color>
+
+    <color name="orange_f6">#F6550c</color>
+    <color name="tx_24_gray">#24B3AB</color>
+
+    <color name="yellow_ff">#ff9212</color>
+
+
+</resources>

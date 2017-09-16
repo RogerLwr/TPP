@@ -1,0 +1,227 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/examine_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/gray_f4"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/reason_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/red_ff6"
+            android:text="取消促销原因"
+            android:layout_marginBottom="10dp"
+            />
+
+        <TextView
+            android:id="@+id/time_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="取消时间: "
+            android:textSize="12sp"
+
+            android:textColor="@color/gray_99"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_33"
+            android:textSize="14sp"
+            android:text="促销价:"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView
+            android:id="@+id/specs_unit_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:textSize="12sp"
+            android:textColor="@color/gray_33"
+            android:layout_gravity="center_vertical"
+            android:text=""
+            android:paddingStart="10dp" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/Widget.Line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_33"
+            android:textSize="14sp"
+            android:text="促销数量:"
+            android:layout_gravity="center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/number_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="12sp"
+            android:textColor="@color/gray_33"
+            android:text=""
+            android:paddingStart="10dp" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/Widget.Line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_33"
+            android:textSize="14sp"
+            android:text="促销时间:"
+            android:layout_gravity="center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/begin_end_time_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/gray_33"
+            android:text=""
+            android:paddingStart="10dp" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/Widget.Line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/limit_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="限购类型: "
+            android:paddingLeft="10dp"
+            android:textColor="@color/gray_33"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="10dp" />
+
+        <TextView
+            android:id="@+id/limit_type_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/gray_33"
+            android:text=""
+            android:paddingStart="10dp" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/Widget.Line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:padding="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="限购数量: "
+            android:textColor="@color/gray_33"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:id="@+id/limit_num_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/gray_33"
+            android:text=""
+            android:paddingStart="10dp" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/Widget.Line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/reset_promotion_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="重新设置促销"
+        android:layout_below="@+id/desc_text_view"
+        android:visibility="visible"
+        android:textSize="18sp"
+        android:textColor="@color/green_0c"
+        android:background="@drawable/btn_white_stroke_green_normal"
+        />
+
+</LinearLayout>
+
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 没有焦点时的背景图片 -->
+    <item android:drawable="@drawable/bg_shape_corners5_green_0c" android:state_window_focused="false" />
+    <!-- 触摸模式下单击时的背景图片 -->
+    <item android:drawable="@drawable/bg_shape_150916_login_corners5_trans_32_black" android:state_focused="false" android:state_pressed="true" />
+    <!-- 选中时的图片背景 -->
+    <item android:drawable="@drawable/bg_shape_150916_login_corners5_trans_32_black" android:state_selected="true" />
+    <item android:drawable="@drawable/bg_shape_150916_login_corners5_trans_32_black" android:state_enabled="false" />
+    <!-- 默认时的背景图片 -->
+    <item android:drawable="@drawable/bg_shape_corners5_green_0c" />
+</selector>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contain_order_buyer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_bg_white_fa"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/name_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:editable="false"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="14dp"
+            android:text="商品品质"
+            android:textColor="@color/gray_33"
+            android:textColorHint="@color/gray_99"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/required_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:text="(必填)"
+            android:textColor="@color/orange_f6"
+            android:textSize="11sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"
+            android:src="@drawable/ic_new_back_green" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/attr_value_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:editable="false"
+        android:gravity="center_vertical"
+        android:hint="请添加"
+        android:paddingBottom="14dp"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:paddingTop="14dp"
+        android:paddingRight="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="@color/gray_99"
+        android:textColorHint="@color/gray_99"
+        android:textSize="14sp" />
+
+
+    <View
+        style="@style/Widget.Line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+
+
+</LinearLayout>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f5"
+    android:orientation="vertical"
+    tools:ignore="ContentDescription">
+
+    <RelativeLayout
+        android:id="@+id/top_container"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/green_0c">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/avatar_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/empty"
+                android:src="@drawable/ic_150915_login_header" />
+
+            <TextView
+                android:id="@+id/username_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dip"
+                android:text="@string/not_logged_in_yet"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/messages_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/abc_list_selector_holo_dark"
+            android:clickable="true"
+            android:padding="10dip"
+            android:src="@drawable/ic_messages" />
+
+        <ImageView
+            android:id="@+id/settings_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_1030_mine_setting" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/gray_f4" />
+
+        <LinearLayout
+            android:id="@+id/contacts_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_150921_phones" />
+
+            <TextView
+                style="@style/Widget.TextView.Mine.Item.New"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:text="通讯企录" />
+
+            <ImageView
+                style="@style/Widget.ImageView.Mine.Right.Arrow"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/chevron_right_gray" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="55dp"
+            android:layout_marginStart="55dp"
+            android:background="@color/gray_e9" />
+
+
+        <LinearLayout
+            android:id="@+id/common_use_info_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_150921_common_use_info" />
+
+            <TextView
+                style="@style/Widget.TextView.Mine.Item.New"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:text="常用信息" />
+
+            <ImageView
+                style="@style/Widget.ImageView.Mine.Right.Arrow"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/chevron_right_gray" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="55dp"
+            android:layout_marginStart="55dp"
+            android:background="@color/gray_e9" />
+
+        <LinearLayout
+            android:id="@+id/question_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_150921_question" />
+
+            <TextView
+                style="@style/Widget.TextView.Mine.Item.New"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:text="常见问题" />
+
+            <ImageView
+                style="@style/Widget.ImageView.Mine.Right.Arrow"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/chevron_right_gray" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="55dp"
+            android:layout_marginStart="55dp"
+            android:background="@color/gray_e9" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/gray_f4" />
+
+        <LinearLayout
+            android:id="@+id/change_password_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_1030_mine_revise_pw" />
+
+            <TextView
+                style="@style/Widget.TextView.Mine.Item.New"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:text="修改密码" />
+
+            <ImageView
+                style="@style/Widget.ImageView.Mine.Right.Arrow"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/chevron_right_gray" />
+
+        </LinearLayout>
+
+        <!--
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray_e9"/>
+
+        <TextView
+            android:id="@+id/buyer_RE_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="买家二维码"
+            android:textSize="18sp"
+            android:padding="15dp"
+            android:background="@color/white"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray_e9"/>
+
+        <TextView
+            android:id="@+id/seller_RE_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="卖家二维码"
+            android:textSize="18sp"
+            android:padding="15sp"
+            android:background="@color/white"/>
+         -->
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+

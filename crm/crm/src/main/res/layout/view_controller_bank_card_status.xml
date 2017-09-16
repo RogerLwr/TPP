@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/bank_card_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/gray_f4"
+        android:divider="@color/gray_f4"
+        android:dividerHeight="10dip"
+        android:layout_weight="8">
+
+    </ListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/update_bank_card_button"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:text="绑定银行卡"
+            android:background="@drawable/btn_150916_green_conners5_selector"/>
+    </RelativeLayout>
+
+</LinearLayout>

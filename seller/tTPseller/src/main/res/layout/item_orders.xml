@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/gray_f4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/buyer_name_text_view"
+            style="@style/Widget.TextView.Item.Title"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_order"
+            android:drawablePadding="16dp"
+            android:drawableStart="@drawable/ic_order"
+            android:text="@string/place_holder" />
+
+
+        <TextView
+            android:id="@+id/order_status_text_view"
+            style="@style/Widget.TextView.Item.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/green" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dip"
+        android:layout_marginBottom="6dip"
+        android:background="@color/gray_e6" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/order_id_text_view"
+            style="@style/Widget.TextView.Item.Line"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/place_holder" />
+
+        <TextView
+            android:id="@+id/amount_text_view"
+            style="@style/Widget.TextView.Item.Line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="0dp"
+            android:textSize="14sp"
+            android:text="@string/place_holder" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/store_name_text_view"
+        style="@style/Widget.TextView.Item.Line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/place_holder" />
+
+    <TextView
+        android:id="@+id/deliver_type_text_view"
+        style="@style/Widget.TextView.Item.Line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/place_holder" />
+
+    <TextView
+        android:id="@+id/pay_type_text_view"
+        style="@style/Widget.TextView.Item.Line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/place_holder" />
+
+    <TextView
+        android:id="@+id/order_time_text_view"
+        style="@style/Widget.TextView.Item.Line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/place_holder"
+
+        />
+
+    <TextView
+        android:id="@+id/deliver_time_text_view"
+        style="@style/Widget.TextView.Item.Line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/place_holder"
+
+        />
+
+    <TextView
+        android:id="@+id/deliver_address_text_view"
+        style="@style/Widget.TextView.Item.Line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/place_holder" />
+
+    <View
+        style="@style/Widget.Line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

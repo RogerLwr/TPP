@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f4"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/login_title_container"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/green_0c"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/top_title_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_title"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/login_line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/login_title_container"
+        android:src="@drawable/line_delive_bottom" />
+
+    <RelativeLayout
+        android:id="@+id/content_login_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_line1"
+        android:layout_margin="20dp"
+        android:background="@drawable/bg_login_corners_white">
+
+        <EditText
+            android:id="@+id/phone_edit_text"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:ems="10"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:hint="用户名: 请输入手机号"
+            android:inputType="phone"
+            android:paddingEnd="20dp"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp"
+            android:textColor="#000000"
+            android:textCursorDrawable="@null"
+            android:textSize="16sp">
+
+            <requestFocus />
+        </EditText>
+
+        <ImageView
+            android:id="@+id/login_line2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/phone_edit_text"
+            android:background="@color/gray_f4" />
+
+
+        <EditText
+            android:id="@+id/password_edit_text"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/login_line2"
+            android:background="@null"
+            android:ems="10"
+            android:hint="@string/login_pwdtxt"
+            android:inputType="textPassword"
+            android:paddingEnd="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingStart="20dp"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@null"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/register_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/login_button"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/register"
+        android:textColor="#717171"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/forget_password_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/login_button"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/login_nopassword"
+        android:textColor="@color/gray_33"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/login_button"
+        style="@style/Widget.Button.Green"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/content_login_rl"
+        android:layout_margin="20dp"
+        android:enabled="false"
+        android:text="@string/login_title"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/agree_checkbox"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/bg_selector_check_box"
+            android:button="@null"
+            android:checked="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我已阅读并遵守"
+            android:textColor="@color/gray_33"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/agree_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="天平派商家管理办法"
+            android:textColor="@color/gray_33"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</RelativeLayout>

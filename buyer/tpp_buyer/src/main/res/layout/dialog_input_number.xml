@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="14dip"
+        android:text="请输入商品数量"
+        android:textColor="@color/gray_4c"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dip"
+        android:background="@color/gray_99" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/decrease_button"
+            android:layout_width="64dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/abc_list_selector_holo_dark"
+            android:padding="4dip"
+            android:text="-"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/number_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="0"
+            android:inputType="number" >
+        </EditText>
+
+        <Button
+            android:id="@+id/increase_button"
+            android:layout_width="64dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/abc_list_selector_holo_dark"
+            android:padding="4dip"
+            android:text="+"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/abc_list_selector_holo_dark"
+            android:text="取消" />
+
+        <Button
+            android:id="@+id/okay_button"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/abc_list_selector_holo_dark"
+            android:text="确定" />
+    </LinearLayout>
+
+</LinearLayout>

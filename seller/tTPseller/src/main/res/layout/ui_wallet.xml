@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green_0c"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="可用余额"
+
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/balance_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/Widget.Line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+
+    <TextView
+        android:id="@+id/draw_cash_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/abc_list_selector_holo_dark"
+        android:clickable="true"
+        android:drawableEnd="@drawable/ic_jump"
+        android:drawableRight="@drawable/ic_jump"
+        android:paddingBottom="15dp"
+        android:paddingEnd="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingStart="20dp"
+        android:paddingTop="15dp"
+        android:text="钱包提现"
+        android:textColor="@color/tx_80"
+        android:textSize="15sp" />
+
+    <View
+        style="@style/Widget.Line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+
+
+    <TextView
+        android:id="@+id/check_balance_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/abc_list_selector_holo_dark"
+        android:clickable="true"
+        android:drawableEnd="@drawable/ic_jump"
+        android:drawableRight="@drawable/ic_jump"
+        android:paddingBottom="15dp"
+        android:paddingEnd="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingStart="20dp"
+        android:paddingTop="15dp"
+        android:text="查询明细"
+        android:textColor="@color/tx_80"
+        android:textSize="15sp" />
+
+
+    <View
+        style="@style/Widget.Line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/check_envelope_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/abc_list_selector_holo_dark"
+            android:clickable="true"
+            android:drawableEnd="@drawable/ic_jump"
+            android:drawableRight="@drawable/ic_jump"
+            android:paddingBottom="15dp"
+            android:paddingEnd="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingStart="20dp"
+            android:paddingTop="15dp"
+            android:text="查看红包"
+            android:textColor="@color/tx_80"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/badge_view"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:layout_gravity="end|top"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/shape_red_dot"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <View
+        style="@style/Widget.Line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/bill_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/abc_list_selector_holo_dark"
+            android:clickable="true"
+            android:drawableEnd="@drawable/ic_jump"
+            android:drawableRight="@drawable/ic_jump"
+            android:paddingBottom="15dp"
+            android:paddingEnd="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingStart="20dp"
+            android:paddingTop="15dp"
+            android:text="对账单"
+            android:textColor="@color/tx_80"
+            android:textSize="15sp" />
+
+
+    </FrameLayout>
+
+
+    <View
+        style="@style/Widget.Line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="start"
+        android:text="温馨提示：钱包提现需要走银行流程,我们将在15个工作日把钱转到您的帐下。"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/red_fd"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+</LinearLayout>

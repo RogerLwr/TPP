@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="10dip"
+    android:paddingRight="10dip"
+    android:paddingTop="13dip"
+    android:paddingEnd="10dip">
+
+    <TextView
+        android:id="@+id/name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:text="New Text"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_marginStart="10dip" />
+
+    <TextView
+        android:id="@+id/address_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="13dip"
+        android:text="New Text"
+        android:textColor="@color/gray_99"
+        android:textSize="15sp"
+        android:layout_marginStart="10dip" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/line_dot" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dip"
+        android:paddingLeft="10dip"
+        android:paddingTop="10dip"
+        android:paddingStart="10dip">
+
+        <ImageView
+            android:id="@+id/default_image_view"
+            android:layout_width="24dip"
+            android:layout_height="24dp"
+            android:clickable="true"
+            android:src="@drawable/checkbox_off" />
+
+        <TextView
+            android:id="@+id/function_desc_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:text="设为默认地址"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginStart="10dip" />
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="1dip"
+            android:layout_weight="1" />
+
+        <View
+            android:id="@+id/edit_button"
+            android:layout_width="60dip"
+            android:layout_height="24dip"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/selector_address_edit"
+            android:clickable="true" />
+
+        <View
+            android:id="@+id/delete_button"
+            android:layout_width="60dip"
+            android:layout_height="24dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dip"
+            android:background="@drawable/selector_address_delete"
+            android:clickable="true"
+            android:layout_marginStart="8dip" />
+
+    </LinearLayout>
+</LinearLayout>

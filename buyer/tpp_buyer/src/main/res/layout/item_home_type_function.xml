@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:numColumns="4"
+        android:orientation="horizontal">
+
+        <include
+            android:id="@+id/function_0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            layout="@layout/item_function"
+            android:layout_weight="1" />
+
+        <include
+            android:id="@+id/function_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            layout="@layout/item_function"
+            android:layout_weight="1" />
+
+        <include
+            android:id="@+id/function_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            layout="@layout/item_function"
+            android:layout_weight="1" />
+
+        <include
+            android:id="@+id/function_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            layout="@layout/item_function"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/Widget.Line"
+        android:layout_width="match_parent"
+        android:layout_height="0.6dip" />
+
+</LinearLayout>

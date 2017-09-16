@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/loading_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/result_button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:visibility="invisible"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/retry_button"
+            style="@style/Widget.Button.Green"
+            android:layout_width="match_parent"
+            android:text="@string/retry"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/cancel_button"
+            style="@style/Widget.Button.Green.Bordered"
+            android:layout_width="match_parent"
+            android:layout_marginTop="12dp"
+            android:text="@string/cancel"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</FrameLayout>

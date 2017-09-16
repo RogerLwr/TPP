@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="6dip">
+
+    <TextView
+        android:id="@+id/msg_text_view"
+        style="@style/Widget.TextView.Item.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:singleLine="false"
+        android:text="我们的客服人员会尽快为您审核\n您也可以拨打客服电话进行快速审核"
+        android:textColor="@color/gray_33" />
+
+    <TextView
+        android:id="@+id/positive_button"
+        style="@style/Widget.Button.Green"
+        android:layout_width="match_parent"
+        android:layout_height="56dip"
+        android:layout_marginTop="1dip"
+        android:text="拨打电话" />
+
+    <TextView
+        android:id="@+id/cancel_button"
+        style="@style/Widget.Button.Green.Bordered"
+        android:layout_width="match_parent"
+        android:layout_height="56dip"
+        android:layout_marginBottom="12dip"
+        android:layout_marginTop="12dip"
+        android:text="等待审核"
+        android:textColor="@color/gray_33" />
+
+</LinearLayout>

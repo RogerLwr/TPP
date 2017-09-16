@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#000</color>
+    <color name="black_1a">#1a1a1a</color>
+    <color name="black_alpha_8">#8000</color>
+    <color name="black_alpha_9">#9000</color>
+    <color name="blue">#00f</color>
+    <color name="bg_d9">#d9d9d9</color>
+    <color name="bg_e6">#e6e6e6</color>
+    <color name="bg_b2">#b2b2b2</color>
+    <color name="bg_ccc">#ccc</color>
+    <color name="bg_f2">#F2F2F2</color>
+    <color name="bg_fa">#FaFaFa</color>
+    <color name="bg_fc">#FCFCFC</color>
+    <color name="bg_ec">#ECECEC</color>
+    <color name="green_9d">#9dcf62</color>
+    <color name="green_9b">#9BCE2D</color>
+    <color name="green_32">#328a26</color>
+    <color name="green_78">#78ae04</color>
+    <color name="green_fd">#fd721f</color>
+    <color name="green_publish">#88C506</color>
+    <color name="line_d5">#d5d5d5</color>
+    <color name="red_cf">#cf0202</color>
+    <color name="red_e9">#e94045</color>
+    <color name="red_fd">#fd721f</color>
+    <color name="orderform_neworder">#f62121</color>
+    <color name="orderform_acceptedorder">#FD721F</color>
+    <color name="orderform_completedorder">#9d9d9d</color>
+    <color name="loadingdialog">#90000000</color>
+    <color name="main_bg_e6">#e6e6e6</color>
+    <color name="main_bg_f2">#f2f2f2</color>
+    <color name="main_bg_f5">#f5f5f5</color>
+    <color name="orange">#FD721F</color>
+
+    <color name="tx_1a">#1a1a1a</color>
+    <color name="tx_333">#333</color>
+    <color name="tx_38">#38b700</color>
+    <color name="tx_4c">#4c4c4c</color>
+    <color name="tx_bb62">#bb626262</color>
+    <color name="tx_666">#666</color>
+    <color name="tx_a5">#a5a5a5</color>
+    <color name="tx_f7">#f7f7f7</color>
+    <color name="tx_fd">#fd721f</color>
+    <color name="tx_71">#717171</color>
+    <color name="tx_80">#808080</color>
+    <color name="tx_999">#999999</color>
+    <color name="tx_b2">#b2b2b2</color>
+    <color name="tx_b3">#b3b3b3</color>
+    <color name="tx_4d">#4d4d4d</color>
+    <color name="tx_selected">#78B739</color>
+    
+    <color name="white">#ffffff</color>
+    <color name="pressed_ccc">#ccc</color>
+    <color name="pressed">#999999</color>
+    <color name="trans">#0000</color>
+
+</resources>

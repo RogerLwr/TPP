@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:src="@drawable/header_print" />
+
+            <View
+                style="@style/Widget.Line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_margin="@dimen/margin_left" />
+
+            <TextView
+                android:id="@+id/name_text_view"
+                style="@style/Widget.TextView.Item.Line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/place_holder" />
+
+            <TextView
+                android:id="@+id/store_name_text_view"
+                style="@style/Widget.TextView.Item.Line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/place_holder" />
+
+            <TextView
+                android:id="@+id/address_text_view"
+                style="@style/Widget.TextView.Item.Line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/place_holder" />
+
+            <TextView
+                android:id="@+id/order_time_text_view"
+                style="@style/Widget.TextView.Item.Line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/place_holder" />
+
+            <TextView
+                android:id="@+id/order_remark_text_view"
+                style="@style/Widget.TextView.Item.Line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/place_holder" />
+
+            <View
+                style="@style/Widget.Line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_margin="@dimen/margin_left" />
+
+            <TextView
+                android:id="@+id/seller_name_text_view"
+                style="@style/Widget.TextView.Item.Line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/place_holder" />
+
+            <TextView
+                android:id="@+id/seller_contact_text_view"
+                style="@style/Widget.TextView.Item.Line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/place_holder" />
+
+            <TextView
+                android:id="@+id/deliver_time_text_view"
+                style="@style/Widget.TextView.Item.Line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/place_holder" />
+
+            <View
+                style="@style/Widget.Line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_margin="@dimen/margin_left" />
+
+            <com.tianpingpai.widget.FixedListView
+                android:id="@+id/product_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0dp"
+                android:paddingBottom="8dp" />
+
+            <View
+                style="@style/Widget.Line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_margin="@dimen/margin_left" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/Widget.TextView.Item.Line"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="支付方式:" />
+
+                <TextView
+                    android:id="@+id/payment_type_text_view"
+                    style="@style/Widget.TextView.Item.Line"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="@string/place_holder" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/Widget.TextView.Item.Line"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:paddingTop="8dp"
+                    android:text="@string/amount_info" />
+
+
+                <TextView
+                    android:id="@+id/amount_text_view"
+                    style="@style/Widget.TextView.Item.Line"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="@string/place_holder" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/Widget.TextView.Item.Line"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="@string/coupon_amount" />
+
+                <TextView
+                    android:id="@+id/coupon_amount_text_view"
+                    style="@style/Widget.TextView.Item.Line"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="@string/place_holder" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/Widget.TextView.Item.Line"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="@string/freight" />
+
+                <TextView
+                    android:id="@+id/deliver_fee_text_view"
+                    style="@style/Widget.TextView.Item.Line"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="@string/place_holder" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="8dp">
+
+
+                <TextView
+                    style="@style/Widget.TextView.Item.Line"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="end"
+                    android:text="@string/total_amount" />
+
+                <TextView
+                    android:id="@+id/total_amount_text_view"
+                    style="@style/Widget.TextView.Item.Line"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="@string/place_holder" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/device_button"
+        style="@style/Widget.Button.Green"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_left"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="打印" />
+
+</LinearLayout>

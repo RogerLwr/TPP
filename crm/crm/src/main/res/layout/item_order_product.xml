@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dip" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/name_text_view"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dip"
+            android:layout_weight="3"
+            android:text="@string/place_holder"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray_33"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/price_text_view"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dip"
+            android:layout_marginTop="4dip"
+            android:gravity="center_horizontal|left"
+            android:layout_weight="3"
+            android:text="@string/place_holder"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray_33"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/number_text_view"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dip"
+            android:layout_marginTop="4dip"
+            android:layout_weight="1"
+            android:text="@string/place_holder"
+            android:gravity="right"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray_33"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/remark_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dip"
+        android:layout_marginBottom="4dip"
+        android:layout_marginTop="6dip"
+        android:text="@string/place_holder"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/gray_99"
+        android:textSize="12sp" />
+
+</LinearLayout>

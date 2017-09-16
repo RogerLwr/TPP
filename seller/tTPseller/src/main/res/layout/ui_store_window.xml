@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/divider_line"
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:layout_gravity="bottom"
+        android:background="#bababa" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_tab_height"
+        android:background="@color/white"
+        app:tabIndicatorColor="@color/green"
+        app:tabIndicatorHeight="3.2dip"
+        app:tabMode="scrollable"
+        app:tabPaddingEnd="36dp"
+        app:tabPaddingStart="36dp"
+        app:tabBackground="@android:color/transparent"
+        app:tabSelectedTextColor="@color/green"
+        app:tabTextAppearance="@style/Widget.TextView.Tab"
+        app:tabTextColor="@color/black" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_dc" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/category_list_view"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray_e6"
+            android:divider="@color/white"
+            android:dividerHeight="0.3dp"
+            android:scrollbars="none" />
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/product_list_view"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:divider="@color/gray_dc"
+                android:dividerHeight="0.5dip" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+</LinearLayout>

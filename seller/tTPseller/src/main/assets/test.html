@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,inital-scale=1,user-scalable=no,minimum-scale=1.0"/>
+    <title></title>
+    <!-- <link rel="stylesheet" href="css/active_copy.css" type="text/css"> -->
+    <style>
+        input{margin-bottom: 50px; height: 50px;}
+        button{height: 50px;}
+    </style>
+</head>
+<body>
+
+<script>
+    function setTitle() {
+        var tv = document.getElementById('text_view');
+        actionBar.setTitle(tv.value);
+    }
+
+    function rightButtonCallback(xx){
+        actionBar.setTitle(xx);
+    }
+
+    function hide(){
+        actionBar.hide();
+    }
+
+    function show(){
+        actionBar.show();
+    }
+
+    function right(){
+        var params = "[{\"name\":\"right\",\"text\":\"gaojing\"},{\"name\":\"test\",\"text\":\"test\"}]";
+        actionBar.setRightButtons(params);
+    }
+
+    function setRightText(){
+        var tv = document.getElementById('text_view');
+        actionBar.getRightButton("right").setText(tv.value);
+    }
+</script>
+
+<div id="wrap">
+    <input id="text_view" type="text" value="test">
+    <input type="button" value="setTitle" onOkClick="setTitle();"/>
+    <input type="button" value="right rightText" onOkClick="setRightText();"/>
+
+    <br/>
+    <input type="button" value="right" onOkClick="right();"/>
+    <input type="button" value="hide" onOkClick="hide();"/>
+    <input type="button" value="show" onOkClick="show();"/>
+</div>
+</body>
+
+</html>

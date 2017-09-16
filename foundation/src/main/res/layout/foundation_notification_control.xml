@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/test_container"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <com.tianpingpai.widget.NotificationView
+        android:id="@+id/notification_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+</FrameLayout>
+

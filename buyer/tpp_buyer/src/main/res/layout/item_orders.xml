@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dip"
+    android:layout_marginTop="10dip"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/order_id_text_view"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dip"
+            android:layout_marginTop="16dip"
+            android:layout_weight="1"
+            android:drawablePadding="16dip"
+            android:paddingLeft="16dip"
+            android:text="@string/place_holder"
+            android:textColor="@color/gray_33"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/order_status_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="10dp"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray_33"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dip"
+        android:layout_marginBottom="6dip"
+        android:layout_marginLeft="16dp"
+        android:background="@color/gray_dc" />
+
+    <TextView
+        android:id="@+id/sale_shop_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dip"
+        android:layout_marginTop="16dip"
+        android:text="@string/place_holder"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/gray_66"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/store_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dip"
+        android:paddingLeft="16dip"
+        android:text="@string/place_holder"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/gray_33"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/order_time_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dip"
+        android:paddingLeft="16dip"
+        android:text="@string/place_holder"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/gray_33"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/deliver_time_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dip"
+        android:paddingLeft="16dip"
+        android:text="@string/place_holder"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/gray_33"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/deliver_type_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dip"
+        android:paddingLeft="16dip"
+        android:text="@string/place_holder"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/gray_33"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/pay_desc_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dip"
+        android:paddingLeft="16dip"
+        android:text="@string/place_holder"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/gray_33"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/amount_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dip"
+            android:text="@string/place_holder"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray_33"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/content_divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray_dc"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/left_button"
+            style="@style/Widget.Button.Green.Bordered"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="前去评价"
+            android:textSize="15sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/right_button"
+            style="@style/Widget.Button.Green.Bordered"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="付款"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dip"
+        android:layout_marginBottom="0dp"
+        android:background="@color/gray_dc" />
+
+</LinearLayout>

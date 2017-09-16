@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="network_failure_click_to_reload">加载失败，点击重试！</string>
+    <string name="app_name">Foundation</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="okay">确定</string>
+    <string name="cancel">取消</string>
+    <string name="done">确定</string>
+    <string name="retry">重试</string>
+    <string name="loading">正在加载，请稍候哦~</string>
+    <string name="click_to_refresh">点击刷新</string>
+
+</resources>
